@@ -1,0 +1,36 @@
+#drupal-modal {
+  .modal-dialog {
+    width: 90%;
+    .modal-content {
+      overflow: hidden;
+
+      .modal-header {
+        background-color: #2c57ad;
+        border-bottom: 1px solid #224384;
+
+        .close {
+          margin-top: 0;
+          color: #fff;
+        }
+
+        .modal-title {
+          color: #fff;
+        }
+      }
+
+      .modal-body {
+        background-color: #f4f4f4;
+
+        .panel-default {
+          border-color: #ccc;
+        }
+      }
+
+      .modal-footer {
+        .btn-danger {
+          display: none;
+        }
+      }
+    }
+  }
+}

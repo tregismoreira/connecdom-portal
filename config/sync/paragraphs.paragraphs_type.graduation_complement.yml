@@ -1,0 +1,9 @@
+uuid: 88c8a2b5-4bf3-4a74-8d54-b6b7f814994b
+langcode: pt-br
+status: true
+dependencies: {  }
+id: graduation_complement
+label: 'Formação complementar'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,14 @@
+uuid: f66a8430-cd55-4ff2-a7d6-f68dedb8ea9a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - user.role.clinic
+  module:
+    - user
+id: user_remove_role_action.clinic
+label: 'Remove the Clínica role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: clinic

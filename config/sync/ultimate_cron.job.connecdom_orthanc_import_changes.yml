@@ -1,0 +1,29 @@
+uuid: 95fd6a0f-de19-4354-81ce-0857bba2f497
+langcode: en
+status: true
+dependencies:
+  module:
+    - connecdom_orthanc
+title: 'Import Orthanc resources'
+id: connecdom_orthanc_import_changes
+weight: -9
+module: connecdom_orthanc
+callback: connecdom_orthanc_import_changes_cron
+scheduler:
+  id: simple
+  configuration:
+    rules:
+      - '* * * * *'
+launcher:
+  id: serial
+  configuration:
+    timeouts:
+      lock_timeout: 3600
+    launcher:
+      thread: 0
+logger:
+  id: database
+  configuration:
+    method: '3'
+    expire: 1209600
+    retain: 1000

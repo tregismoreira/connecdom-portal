@@ -1,0 +1,10 @@
+uuid: f0737b6f-0633-457b-97f4-3218409946c8
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - user
+id: user.doctor_edit
+label: 'Médico: Edição'
+targetEntityType: user
+cache: true

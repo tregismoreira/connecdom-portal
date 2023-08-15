@@ -1,0 +1,5 @@
+connecdom_tweaks.clinic.add_staff:
+  route_name: view.clinic_staff.page_add_staff
+  title: "Add doctor"
+  appears_on:
+    - view.clinic_staff.page_staff

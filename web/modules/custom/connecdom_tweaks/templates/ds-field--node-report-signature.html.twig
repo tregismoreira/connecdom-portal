@@ -1,0 +1,13 @@
+<div class="signature-wrapper">
+  {% if data|length > 0 %}
+  <div class="greeting">Com os cumprimentos a(o) colega,</div>
+  <div class="signature"><img src="{{ data.signature_url }}" alt="{{ data.doctor_name }}" /></div>
+  <hr />
+  <div class="id">
+    <div class="name">Dr(a). {{ data.doctor_name }}</div>
+    <div class="crm">CRM: {{ data.doctor_crm }}</div>
+  </div>
+  {% else %}
+  <div class="empty">{{ 'No available signature.'|t }}</div>
+  {% endif %}
+</div>

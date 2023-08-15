@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * Generate token for existing Clinics.
+ */
+function connecdom_tweaks_update_8201() {
+  $orthanc_auth = new \Drupal\connecdom_orthanc_auth\ConnecdomOrthancAuth();
+  $database = \Drupal::database();
+  $query = $database->select('user__roles', 'u');
+  $query->fields('u', ['entity_id']);
+  $query->condition('u.roles_target_id', 'clinic');
+  $results = $query->execute()->fetchAll();
+
+  foreach ($results as $result) {
+    $user = \Drupal\user\Entity\User::load($result->entity_id);
+
+    if (!$user->field_access_token->value) {
+      // Generate and store the new token.
+      $access_token = $orthanc_auth->generateAccessToken();
+      $orthanc_auth->storeAccessToken($access_token, 2);
+
+      // Save in profile's field.
+      $user->field_access_token->value = $access_token;
+      $user->save();
+    }
+  }
+}

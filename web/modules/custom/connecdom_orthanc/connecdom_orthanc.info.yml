@@ -1,0 +1,5 @@
+name: "ConnecdomOrthanc Integration"
+type: module
+description: "This module provides a basic integration with ConnecdomOrthanc server"
+core: 8.x
+package: "Connecdom"

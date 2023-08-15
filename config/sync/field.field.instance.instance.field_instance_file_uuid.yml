@@ -1,0 +1,22 @@
+uuid: 589be77e-43bf-4bc1-8767-92052c3aaf8d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.instance.field_instance_file_uuid
+  module:
+    - connecdom_orthanc
+_core:
+  default_config_hash: lb93mmirEk0gw51VjBNo7kHTJJMby_ikPOAGxqdCjA8
+id: instance.instance.field_instance_file_uuid
+field_name: field_instance_file_uuid
+entity_type: instance
+bundle: instance
+label: 'File UUID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

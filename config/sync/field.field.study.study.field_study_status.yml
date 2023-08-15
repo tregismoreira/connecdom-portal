@@ -1,0 +1,23 @@
+uuid: 4fd10bc3-31b2-46c2-9f5b-a63d4b5f9926
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.study.field_study_status
+  module:
+    - connecdom_orthanc
+    - options
+id: study.study.field_study_status
+field_name: field_study_status
+entity_type: study
+bundle: study
+label: Status
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: unassigned
+default_value_callback: ''
+settings: {  }
+field_type: list_string

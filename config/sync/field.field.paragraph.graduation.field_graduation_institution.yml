@@ -1,0 +1,19 @@
+uuid: 7bf71805-cc76-4ae0-b2a7-65a55abc7295
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_graduation_institution
+    - paragraphs.paragraphs_type.graduation
+id: paragraph.graduation.field_graduation_institution
+field_name: field_graduation_institution
+entity_type: paragraph
+bundle: graduation
+label: Instituição
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

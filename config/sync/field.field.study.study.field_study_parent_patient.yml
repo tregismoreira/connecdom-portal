@@ -1,0 +1,28 @@
+uuid: 941b8fb5-4050-4525-b3d0-f65d0c85bdc2
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.study.field_study_parent_patient
+  module:
+    - connecdom_orthanc
+_core:
+  default_config_hash: iI0yQQwAUxRaFErI2MZaf6g059aFjakk2dHFhT-Z224
+id: study.study.field_study_parent_patient
+field_name: field_study_parent_patient
+entity_type: study
+bundle: study
+label: 'Parent Patient'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:patient'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

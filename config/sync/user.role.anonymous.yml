@@ -1,0 +1,12 @@
+uuid: 47a9ae17-0701-44b1-abc6-f4a5fa77b130
+langcode: pt-br
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Usuário anônimo'
+weight: 0
+is_admin: false
+permissions:
+  - 'restful post connecdom_orthanc_auth_resource'

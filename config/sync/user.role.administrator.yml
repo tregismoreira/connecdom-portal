@@ -1,0 +1,21 @@
+uuid: d054253c-d326-433b-9fb1-87954a0fff9f
+langcode: pt-br
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Om6FEO7vZZMkPIbVvfxtdkWerQ2PvQM4sWUd6Q3ZnfI
+id: administrator
+label: Administrator
+weight: 2
+is_admin: false
+permissions:
+  - 'access site in maintenance mode'
+  - 'access worklist'
+  - 'administer users'
+  - 'create field_access_token'
+  - 'edit field_access_token'
+  - 'edit own field_access_token'
+  - 'manage access tokens'
+  - 'view field_access_token'
+  - 'view own field_access_token'
+  - 'view study on dicom web viewer'

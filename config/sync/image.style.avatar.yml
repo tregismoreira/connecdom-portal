@@ -1,0 +1,15 @@
+uuid: 1d0c77e9-801c-4f1d-b14e-160d4623bc55
+langcode: pt-br
+status: true
+dependencies: {  }
+name: avatar
+label: 'Avatar (50x50)'
+effects:
+  57a8d12b-0f72-4063-a8c9-9658e921db6d:
+    uuid: 57a8d12b-0f72-4063-a8c9-9658e921db6d
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 50
+      height: 50
+      anchor: center-center

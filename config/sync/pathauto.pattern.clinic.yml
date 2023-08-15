@@ -1,0 +1,22 @@
+uuid: 79295c22-1f3d-471e-85b8-511671d24c03
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: clinic
+label: Clinic
+type: 'canonical_entities:node'
+pattern: '/clinic/[node:title]'
+selection_criteria:
+  01061cc9-1b97-4eda-811e-cd0d9baeb9eb:
+    id: node_type
+    bundles:
+      clinic: clinic
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 01061cc9-1b97-4eda-811e-cd0d9baeb9eb
+selection_logic: and
+weight: -5
+relationships: {  }

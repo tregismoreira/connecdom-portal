@@ -1,0 +1,47 @@
+uuid: dfa540dd-6502-42a0-827e-caa6eddede5e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachments
+    - node.type.study_additional_info
+  module:
+    - file
+    - filefield_paths
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: study_attachments
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
+    file_name:
+      value: '[random:hash:md5].[file:ffp-extension-original]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+id: node.study_additional_info.field_attachments
+field_name: field_attachments
+entity_type: node
+bundle: study_additional_info
+label: Attachments
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'pdf jpg jpeg png'
+  max_filesize: ''
+  description_field: true
+  description_field_required: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

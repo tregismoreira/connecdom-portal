@@ -1,0 +1,195 @@
+uuid: b2987046-cc9f-47c6-8181-26d7070168ac
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_orthanc
+    - options
+id: series.field_series_modality
+field_name: field_series_modality
+entity_type: series
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: CR
+      label: 'CR - Computed Radiography'
+    -
+      value: CT
+      label: 'CT - Computed Tomography'
+    -
+      value: MR
+      label: 'MR - Magnetic Resonance'
+    -
+      value: NM
+      label: 'NM - Nuclear Medicine'
+    -
+      value: US
+      label: 'US - Ultrasound'
+    -
+      value: OT
+      label: 'OT - Other'
+    -
+      value: BI
+      label: 'BI - Biomagnetic imaging'
+    -
+      value: DG
+      label: 'DG - Diaphanography'
+    -
+      value: ES
+      label: 'ES - Endoscopy'
+    -
+      value: LS
+      label: 'LS - Laser surface scan'
+    -
+      value: PT
+      label: 'PT - Positron emission tomography (PET)'
+    -
+      value: RG
+      label: 'RG - Radiographic imaging (conventional film/screen)'
+    -
+      value: TG
+      label: 'TG - Thermography'
+    -
+      value: XA
+      label: 'XA - X-Ray Angiography'
+    -
+      value: RF
+      label: 'RF - Radio Fluoroscopy'
+    -
+      value: RTIMAGE
+      label: 'RTIMAGE - Radiotherapy Image'
+    -
+      value: RTDOSE
+      label: 'RTDOSE - Radiotherapy Dose'
+    -
+      value: RTSTRUCT
+      label: 'RTSTRUCT - Radiotherapy Structure Set'
+    -
+      value: RTPLAN
+      label: 'RTPLAN - Radiotherapy Plan'
+    -
+      value: RTRECORD
+      label: 'RTRECORD - RT Treatment Record'
+    -
+      value: HC
+      label: 'HC - Hard Copy'
+    -
+      value: DX
+      label: 'DX - Digital Radiography'
+    -
+      value: MG
+      label: 'MG - Mammography'
+    -
+      value: IO
+      label: 'IO - Intra-oral Radiography'
+    -
+      value: PX
+      label: 'PX - Panoramic X-Ray'
+    -
+      value: GM
+      label: 'GM - General Microscopy'
+    -
+      value: SM
+      label: 'SM - Slide Microscopy'
+    -
+      value: XC
+      label: 'XC - External-camera Photography'
+    -
+      value: PR
+      label: 'PR - Presentation State'
+    -
+      value: AU
+      label: 'AU - Audio'
+    -
+      value: ECG
+      label: 'ECG - Electrocardiography'
+    -
+      value: EPS
+      label: 'EPS - Cardiac Electrophysiology'
+    -
+      value: HD
+      label: 'HD - Hemodynamic Waveform'
+    -
+      value: SR
+      label: 'SR - SR Document'
+    -
+      value: IVUS
+      label: 'IVUS - Intravascular Ultrasound'
+    -
+      value: OP
+      label: 'OP - Ophthalmic Photography'
+    -
+      value: SMR
+      label: 'SMR - Stereometric Relationship'
+    -
+      value: AR
+      label: 'AR - Autorefraction'
+    -
+      value: KER
+      label: 'KER - Keratometry'
+    -
+      value: VA
+      label: 'VA - Visual Acuity'
+    -
+      value: SRF
+      label: 'SRF - Subjective Refraction'
+    -
+      value: OCT
+      label: 'OCT - Optical Coherence Tomography (non-Ophthalmic)'
+    -
+      value: LEN
+      label: 'LEN - Lensometry'
+    -
+      value: OPV
+      label: 'OPV - Ophthalmic Visual Field'
+    -
+      value: OPM
+      label: 'OPM - Ophthalmic Mapping'
+    -
+      value: OAM
+      label: 'OAM - Ophthalmic Axial Measurements'
+    -
+      value: RESP
+      label: 'RESP - Respiratory Waveform'
+    -
+      value: KO
+      label: 'KO - Key Object Selection'
+    -
+      value: SEG
+      label: 'SEG - Segmentation'
+    -
+      value: REG
+      label: 'REG - Registration'
+    -
+      value: OPT
+      label: 'OPT - Ophthalmic Tomography'
+    -
+      value: BDUS
+      label: 'BDUS - Bone Densitometry (ultrasound)'
+    -
+      value: BMD
+      label: 'BMD - Bone Densitometry (X-Ray)'
+    -
+      value: DOC
+      label: 'DOC - Document'
+    -
+      value: FID
+      label: 'FID - Fiducials'
+    -
+      value: PLAN
+      label: 'PLAN - Plan'
+    -
+      value: IOL
+      label: 'IOL - Intraocular Lens Data'
+    -
+      value: IVOCT
+      label: 'IVOCT - Intravascular Optical Coherence Tomography'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

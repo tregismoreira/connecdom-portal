@@ -1,0 +1,15 @@
+uuid: 09618163-df66-482b-ab27-24252ebe588b
+name: ConnecDOM
+mail: admin@connecdom.com.br
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /worklist
+admin_compact_mode: false
+weight_select_max: 100
+langcode: pt-br
+default_langcode: pt-br
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

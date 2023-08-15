@@ -1,0 +1,25 @@
+.links.dropdown {
+  .btn {
+    padding: 4px 8px;
+  }
+  .dropdown-menu {
+    padding: 0;
+
+    li a {
+      padding: 6px;
+      border-radius: 3px;
+    }
+  }
+}
+
+.view-filters {
+  padding: 10px;
+  background-color: #eee;
+  border: 2px solid #ddd;
+  border-radius: 3px;
+
+  .form-item,
+  .form-actions {
+    margin: 10px;
+  }
+}

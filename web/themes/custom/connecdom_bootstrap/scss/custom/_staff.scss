@@ -1,0 +1,15 @@
+.view-clinic-staff {
+  .table-responsive {
+    overflow: inherit;
+
+    td {
+      vertical-align: middle !important;
+    }
+
+    .views-field-user-picture {
+      img {
+        width: 30px;
+      }
+    }
+  }
+}

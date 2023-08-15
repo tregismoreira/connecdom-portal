@@ -1,0 +1,49 @@
+uuid: d2c72e32-df5b-44ac-8dbf-f56d7e00045e
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_activity
+    - field_permissions
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: connecdom_activity.field_activity_action
+field_name: field_activity_action
+entity_type: connecdom_activity
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: study_added
+      label: 'Study added'
+    -
+      value: study_assigned
+      label: 'Study assigned to a doctor'
+    -
+      value: study_unassigned
+      label: 'Study unassigned from a doctor'
+    -
+      value: study_taken
+      label: 'Study taken by a doctor'
+    -
+      value: info_added
+      label: 'Additional information added'
+    -
+      value: info_edited
+      label: 'Additional information edited'
+    -
+      value: report_added
+      label: 'Report added'
+    -
+      value: report_published
+      label: 'Report published'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,62 @@
+/* line 1, ../scss/print-pdf-report.scss */
+.page {
+  padding: 0;
+}
+
+/* line 5, ../scss/print-pdf-report.scss */
+table {
+  width: 100%;
+  margin: 2rem 0;
+  border: 2px solid;
+  padding: 5px;
+}
+/* line 11, ../scss/print-pdf-report.scss */
+table .col-1,
+table .col-3 {
+  width: 10%;
+}
+/* line 15, ../scss/print-pdf-report.scss */
+table .col-4 {
+  width: 20%;
+}
+/* line 19, ../scss/print-pdf-report.scss */
+table .value {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 25, ../scss/print-pdf-report.scss */
+.field--name-field-report-title {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* line 32, ../scss/print-pdf-report.scss */
+.signature-wrapper {
+  text-align: center;
+  margin-top: 4rem;
+}
+/* line 36, ../scss/print-pdf-report.scss */
+.signature-wrapper .signature {
+  margin-top: 10px;
+}
+/* line 38, ../scss/print-pdf-report.scss */
+.signature-wrapper .signature img {
+  max-height: 60px;
+}
+/* line 43, ../scss/print-pdf-report.scss */
+.signature-wrapper hr {
+  max-width: 400px;
+  border-top: 1px solid;
+  margin-top: 0.2em;
+  margin-bottom: 0.5rem;
+}
+/* line 50, ../scss/print-pdf-report.scss */
+.signature-wrapper .empty {
+  display: inline-block;
+  padding: 10px;
+  color: red;
+  border: 2px solid red;
+}

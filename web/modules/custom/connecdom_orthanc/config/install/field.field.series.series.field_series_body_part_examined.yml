@@ -1,0 +1,20 @@
+uuid: 314c3c82-13c5-411d-b77d-1a541d18f7fa
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.series.field_series_body_part_examined
+  module:
+    - connecdom_orthanc
+id: series.series.field_series_body_part_examined
+field_name: field_series_body_part_examined
+entity_type: series
+bundle: series
+label: 'Body Part Examined'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

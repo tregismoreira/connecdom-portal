@@ -1,0 +1,18 @@
+uuid: 8a95120e-6593-4164-bca2-56db9db8bede
+langcode: pt-br
+status: true
+dependencies: {  }
+id: doctor
+label: Médico
+weight: 4
+is_admin: null
+permissions:
+  - 'access worklist'
+  - 'create report content'
+  - 'edit any report content'
+  - 'edit own report content'
+  - 'entity print access bundle report'
+  - 'use study_report transition create_new_draft'
+  - 'use study_report transition publish'
+  - 'view any unpublished content'
+  - 'view study on dicom web viewer'

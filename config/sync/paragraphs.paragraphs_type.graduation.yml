@@ -1,0 +1,9 @@
+uuid: 5fd05d14-a18b-4dbf-a6ea-73209b20ceee
+langcode: pt-br
+status: true
+dependencies: {  }
+id: graduation
+label: 'Formação superior'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

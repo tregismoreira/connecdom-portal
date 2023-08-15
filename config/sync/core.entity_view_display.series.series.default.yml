@@ -1,0 +1,81 @@
+uuid: 6f56421c-43da-405d-81f3-91f59765f435
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.series.series.field_series_body_part_examined
+    - field.field.series.series.field_series_date
+    - field.field.series.series.field_series_description
+    - field.field.series.series.field_series_instances
+    - field.field.series.series.field_series_modality
+    - field.field.series.series.field_series_parent_study
+    - field.field.series.series.field_series_protocol_name
+  module:
+    - connecdom_orthanc
+    - datetime
+    - options
+_core:
+  default_config_hash: PIppeciXiI-h2E7KcRfZDNxuZlAzJZ8usLVXyhhpbZ4
+id: series.series.default
+targetEntityType: series
+bundle: series
+mode: default
+content:
+  field_series_body_part_examined:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_series_date:
+    weight: 3
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_series_description:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_series_instances:
+    weight: 6
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_series_modality:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_series_parent_study:
+    weight: 5
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_series_protocol_name:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  uid: true

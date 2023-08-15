@@ -1,0 +1,67 @@
+uuid: bf6d1f86-529d-42b9-b495-abdda0d2b97b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_signature
+  module:
+    - filefield_paths
+    - image
+    - multiple_registration
+    - user
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: signatures
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
+    file_name:
+      value: '[random:hash:sha1].[file:ffp-extension-original]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+  multiple_registration:
+    user_additional_register_form:
+      authenticated: 0
+      clinic: 0
+      doctor: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      clinic: 0
+      doctor: 0
+id: user.user.field_signature
+field_name: field_signature
+entity_type: user
+bundle: user
+label: Assinatura
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

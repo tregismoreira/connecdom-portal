@@ -1,0 +1,9 @@
+<div class="jumbotron text-center">
+  <h2>Você ainda não tem um perfil</h2>
+  <p class="lead">Selecione uma das opções abaixo para criar seu perfil</p>
+  <p>
+    <a class="btn btn-lg btn-primary" href="{{ path('node.add', {'node_type': 'doctor'}, {'query': {'destination': '/user'}}) }}" role="button">Radiologista</a>
+    ou
+    <a class="btn btn-lg btn-success" href="{{ path('node.add', {'node_type': 'clinic'}, {'query': {'destination': '/user'}}) }}" role="button">Centro Médico</a>
+  </p>
+</div>

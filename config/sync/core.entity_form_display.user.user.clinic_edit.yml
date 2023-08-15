@@ -1,0 +1,196 @@
+uuid: 8aa571a4-2f27-45d5-9102-6777e72b9bbf
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.clinic_edit
+    - field.field.user.user.field_access_token
+    - field.field.user.user.field_address
+    - field.field.user.user.field_bank
+    - field.field.user.user.field_bank_account
+    - field.field.user.user.field_bank_branch
+    - field.field.user.user.field_billing_cnpj
+    - field.field.user.user.field_billing_cpf
+    - field.field.user.user.field_billing_type
+    - field.field.user.user.field_clinic_branch
+    - field.field.user.user.field_clinic_staff
+    - field.field.user.user.field_cnpj
+    - field.field.user.user.field_company
+    - field.field.user.user.field_contact_name
+    - field.field.user.user.field_cpf
+    - field.field.user.user.field_crm_number
+    - field.field.user.user.field_crm_state
+    - field.field.user.user.field_curriculum
+    - field.field.user.user.field_email
+    - field.field.user.user.field_fullname
+    - field.field.user.user.field_graduation
+    - field.field.user.user.field_graduation_complement
+    - field.field.user.user.field_graduation_others
+    - field.field.user.user.field_graduation_post
+    - field.field.user.user.field_locality
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_signature
+    - field.field.user.user.field_terms_autonomy
+    - field.field.user.user.field_terms_of_use
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - address
+    - brazilian_ids
+    - field_group
+    - image
+    - user
+third_party_settings:
+  field_group:
+    group_account:
+      children:
+        - account
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Conta de usuário'
+    group_profile:
+      children:
+        - user_picture
+        - field_fullname
+        - field_clinic_branch
+        - field_address
+        - field_company
+        - field_cnpj
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Dados do perfil'
+    group_contact:
+      children:
+        - field_contact_name
+        - field_phone
+        - field_email
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        label: 'Dados para contato'
+        description: 'Essas informações não serão divulgadas.'
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Dados para contato'
+_core:
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+id: user.user.clinic_edit
+targetEntityType: user
+bundle: user
+mode: clinic_edit
+content:
+  account:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_address:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_clinic_branch:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_cnpj:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: brazilian_ids_cnpj
+    region: content
+  field_company:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_contact_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_email:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_fullname:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_phone:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  user_picture:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  contact: true
+  field_access_token: true
+  field_bank: true
+  field_bank_account: true
+  field_bank_branch: true
+  field_billing_cnpj: true
+  field_billing_cpf: true
+  field_billing_type: true
+  field_clinic_staff: true
+  field_cpf: true
+  field_crm_number: true
+  field_crm_state: true
+  field_curriculum: true
+  field_graduation: true
+  field_graduation_complement: true
+  field_graduation_others: true
+  field_graduation_post: true
+  field_locality: true
+  field_signature: true
+  field_terms_autonomy: true
+  field_terms_of_use: true
+  langcode: true
+  language: true
+  path: true
+  timezone: true

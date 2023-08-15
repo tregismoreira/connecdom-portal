@@ -1,0 +1,31 @@
+uuid: 6b2162ec-b7b3-4e46-8eee-c82eb60898b7
+langcode: pt-br
+status: true
+dependencies: {  }
+id: clinic
+label: 'Centro de Imagem'
+weight: 3
+is_admin: null
+permissions:
+  - 'access worklist'
+  - 'create field_clinic_staff'
+  - 'create field_study_assignee'
+  - 'create field_study_doctor'
+  - 'create field_team'
+  - 'create study_additional_info content'
+  - 'edit any study_additional_info content'
+  - 'edit field_study_assignee'
+  - 'edit field_study_doctor'
+  - 'edit own field_clinic_staff'
+  - 'edit own field_study_assignee'
+  - 'edit own field_study_doctor'
+  - 'edit own field_team'
+  - 'entity print access bundle report'
+  - 'manage staff'
+  - 'manage study assignment'
+  - 'view any unpublished content'
+  - 'view field_study_doctor'
+  - 'view own field_access_token'
+  - 'view own field_clinic_staff'
+  - 'view own field_study_doctor'
+  - 'view study on dicom web viewer'

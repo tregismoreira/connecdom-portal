@@ -1,0 +1,7 @@
+multiple_registration_pages_white_list:
+  clinic: clinic
+  doctor: doctor
+  anonymous: 0
+  authenticated: 0
+  administrator: 0
+  super_administrator: 0

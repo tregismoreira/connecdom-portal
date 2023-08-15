@@ -1,0 +1,33 @@
+uuid: 24b590ec-846f-4b61-b75d-9ded6c4e7598
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_orthanc
+    - field_permissions
+    - options
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: 6Rzb4pXlHoDXidJq8EDjF5AHy-x7Dw2V9Vjl25LX6II
+id: patient.field_patient_sex
+field_name: field_patient_sex
+entity_type: patient
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: M
+      label: M
+    -
+      value: F
+      label: F
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

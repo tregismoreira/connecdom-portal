@@ -1,0 +1,88 @@
+<?php
+
+/**
+ * @file
+ * Contains connecdom_activity.module.
+ */
+
+use Drupal\Core\Entity\EntityInterface;
+
+/**
+ * Implements hook_entity_insert().
+ */
+function connecdom_activity_entity_insert(EntityInterface $entity) {
+  switch ($entity->getEntityType()->id()) {
+    case 'study':
+      $action = 'study_added';
+      $study = $entity->id();
+      $doctor = $entity->field_study_assignee->entity ? $entity->field_study_assignee->entity->id() : NULL;
+      $clinic = $entity->field_study_clinic->entity ? $entity->field_study_clinic->entity->id() : NULL;
+      break;
+
+    case 'node':
+      if ($entity->bundle() == 'report') {
+        $action = 'report_added';
+        $study = $entity->field_report_study->entity->id();
+        $doctor = $entity->field_report_study->entity->field_study_assignee->entity->id();
+        $clinic = $study->field_study_clinic->entity->id();
+      }
+      break;
+  }
+
+  if (isset($action) && isset($study)) {
+    $connecdom_activity_handler = \Drupal::service('connecdom_activity.handler');
+    $connecdom_activity_handler->log($action, $study, $clinic, $doctor);
+  }
+}
+
+/**
+ * Implements hook_entity_update().
+ */
+function connecdom_activity_entity_update(EntityInterface $entity) {
+  switch ($entity->getEntityType()->id()) {
+    case 'study':
+      if ($entity->original->field_study_status->value != $entity->field_study_status->value) {
+        switch ($entity->field_study_status->value) {
+          case 'assigned':
+            $action = 'study_assigned';
+            $study = $entity->id();
+            $doctor = $entity->field_study_assignee->entity->id();
+            // $clinic = $entity->field_study_clinic->entity->id();
+            break;
+
+          case 'unassigned':
+            $action = 'study_unassigned';
+            $study = $entity->id();
+            $doctor = $entity->original->field_study_assignee->entity->id();
+            // $clinic = $entity->field_study_clinic->entity->id();
+            break;
+
+          case 'in_progress':
+            $action = 'study_taken';
+            $study = $entity->id();
+            $doctor = $entity->field_study_assignee->entity->id();
+            // $clinic = $entity->field_study_clinic->entity->id();
+            break;
+        }
+      }
+      break;
+
+    case 'node':
+      if ($entity->bundle() == 'report') {
+        if (!$entity->original->status->value && $entity->status->value) {
+          $action = 'report_published';
+          $study = $entity->field_report_study->entity->id();
+          $doctor = $entity->field_report_study->entity->field_study_assignee->entity->id();
+          // $clinic = $study->field_study_clinic->entity->id();
+        }
+      }
+      break;
+  }
+
+  // Store Activity.
+  if (isset($action) && isset($study) && isset($doctor)) {
+    $clinic = NULL;
+    $connecdom_activity_handler = \Drupal::service('connecdom_activity.handler');
+    $connecdom_activity_handler->log($action, $study, $clinic, $doctor);
+  }
+}

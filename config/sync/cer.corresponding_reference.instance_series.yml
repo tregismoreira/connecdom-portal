@@ -1,0 +1,14 @@
+uuid: c5fd1c2d-9986-4c3c-a194-5178a18c0253
+langcode: pt-br
+status: true
+dependencies: {  }
+id: instance_series
+label: 'Instance <> Series'
+enabled: true
+first_field: field_instance_parent_series
+second_field: field_series_instances
+bundles:
+  instance:
+    - instance
+  series:
+    - series

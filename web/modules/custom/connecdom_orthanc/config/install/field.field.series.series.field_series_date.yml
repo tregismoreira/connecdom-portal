@@ -1,0 +1,21 @@
+uuid: 7e3e9165-00b1-4e58-afb0-4e9dcc1446b9
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.series.field_series_date
+  module:
+    - connecdom_orthanc
+    - datetime
+id: series.series.field_series_date
+field_name: field_series_date
+entity_type: series
+bundle: series
+label: 'Series Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

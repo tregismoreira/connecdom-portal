@@ -1,0 +1,23 @@
+uuid: 8f69799c-9faa-4a31-a9c9-42a60eedc0d1
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_graduation_year
+    - paragraphs.paragraphs_type.graduation_post
+id: paragraph.graduation_post.field_graduation_year
+field_name: field_graduation_year
+entity_type: paragraph
+bundle: graduation_post
+label: 'Ano de conclusão'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

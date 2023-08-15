@@ -1,0 +1,48 @@
+uuid: bab61f17-f08a-433b-89c0-2d127a3c92cd
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_graduation_post
+    - paragraphs.paragraphs_type.graduation_post
+  module:
+    - entity_reference_revisions
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      authenticated: 0
+      clinic: 0
+      doctor: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      clinic: 0
+      doctor: 0
+id: user.user.field_graduation_post
+field_name: field_graduation_post
+entity_type: user
+bundle: user
+label: 'Pós-graduação / Residência'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      graduation_post: graduation_post
+    target_bundles_drag_drop:
+      graduation:
+        weight: 4
+        enabled: false
+      graduation_complement:
+        weight: 5
+        enabled: false
+      graduation_post:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

@@ -1,0 +1,21 @@
+uuid: 1cd8344b-fd8f-43d4-9b62-49dc6fb0fd0a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.series.field_series_modality
+  module:
+    - connecdom_orthanc
+    - options
+id: series.series.field_series_modality
+field_name: field_series_modality
+entity_type: series
+bundle: series
+label: Modality
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

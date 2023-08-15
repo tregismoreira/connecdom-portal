@@ -1,0 +1,22 @@
+uuid: 32ca5393-e5f7-4289-ace9-c2a625192955
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.report
+id: node.report.promote
+field_name: promote
+entity_type: node
+bundle: report
+label: 'Promovido para a página inicial'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desliga
+field_type: boolean

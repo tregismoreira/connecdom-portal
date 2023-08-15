@@ -1,0 +1,6 @@
+status: 1
+pattern: 'Additional info for [node:field_additional_info_study:entity:resource_id]'
+escape: false
+dependencies:
+  config:
+    - node.type.study_additional_info

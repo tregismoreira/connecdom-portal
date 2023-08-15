@@ -1,0 +1,56 @@
+<?php
+
+namespace Drupal\connecdom_tweaks\Plugin\views\field;
+
+use Drupal\Core\Url;
+use Drupal\views\Plugin\views\field\LinkBase;
+use Drupal\views\ResultRow;
+use Drupal\connecdom_tweaks\Controller\ConnecdomTweaksController;
+
+/**
+ * A handler to provide a field that is completely custom by the administrator.
+ *
+ * @ingroup views_field_handlers
+ *
+ * @ViewsField("study_info_view_link")
+ */
+class StudyInfoViewLink extends LinkBase {
+
+  /**
+   * {@inheritdoc}
+   */
+  protected function getUrlInfo(ResultRow $row) {
+    $resource_id = $row->resource_id;
+
+    return Url::fromRoute('entity.node.canonical', ['node' => ConnecdomTweaksController::getNodeIdFromStudyId($resource_id, 'field_additional_info_study')], [
+      'attributes' => [
+        'class' => ['use-ajax'],
+        'data-dialog-type' => 'modal'
+      ]
+    ]);
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function render(ResultRow $row) {
+    $build = [];
+    $resource_id = $row->resource_id;
+    $node_id = ConnecdomTweaksController::getNodeIdFromStudyId($resource_id, 'field_additional_info_study');
+
+    if ($node_id) {
+      $node = ConnecdomTweaksController::entityLoadFromResourceId($node_id, 'node');
+      $build = ['#markup' => $node->access('view') ? $this->renderLink($row) : ''];
+    }
+
+    return $build;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  protected function getDefaultLabel() {
+    return $this->t('View Additional Info');
+  }
+
+}

@@ -1,0 +1,52 @@
+uuid: 5f9624f8-c779-4dd0-8bf0-6393f2cb529d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.instance.instance.field_instance_file_size
+    - field.field.instance.instance.field_instance_file_uuid
+    - field.field.instance.instance.field_instance_image_comments
+    - field.field.instance.instance.field_instance_parent_series
+  module:
+    - connecdom_orthanc
+_core:
+  default_config_hash: 78wK2QREywaVI19oWRVVa8dFQt_4xdD-9g9gyVEoEUQ
+id: instance.instance.default
+targetEntityType: instance
+bundle: instance
+mode: default
+content:
+  field_instance_file_size:
+    weight: 0
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_instance_file_uuid:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_instance_image_comments:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_instance_parent_series:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }

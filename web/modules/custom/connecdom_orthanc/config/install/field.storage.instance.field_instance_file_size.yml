@@ -1,0 +1,24 @@
+uuid: 570cd468-d7c7-4e9f-95d7-02776447c4c9
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_orthanc
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: instance.field_instance_file_size
+field_name: field_instance_file_size
+entity_type: instance
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

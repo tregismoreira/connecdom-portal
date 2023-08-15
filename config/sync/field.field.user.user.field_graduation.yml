@@ -1,0 +1,48 @@
+uuid: 3c8121a6-e910-4434-8ad4-7cbdd9b96cc2
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_graduation
+    - paragraphs.paragraphs_type.graduation
+  module:
+    - entity_reference_revisions
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      authenticated: 0
+      clinic: 0
+      doctor: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      clinic: 0
+      doctor: 0
+id: user.user.field_graduation
+field_name: field_graduation
+entity_type: user
+bundle: user
+label: 'Formação superior'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      graduation: graduation
+    target_bundles_drag_drop:
+      graduation:
+        enabled: true
+        weight: 4
+      graduation_complement:
+        weight: 5
+        enabled: false
+      graduation_post:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,24 @@
+uuid: 00c1fe80-603f-4205-bbce-4c5023cbd669
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.instance.field_instance_file_size
+  module:
+    - connecdom_orthanc
+id: instance.instance.field_instance_file_size
+field_name: field_instance_file_size
+entity_type: instance
+bundle: instance
+label: 'File Size'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,14 @@
+uuid: 093714d0-3202-45ba-a48f-8f0b1b8317ce
+langcode: pt-br
+status: true
+dependencies: {  }
+id: additional_info_study
+label: 'Additional Info <> Study'
+enabled: false
+first_field: field_additional_info_study
+second_field: field_study_additional_info
+bundles:
+  node:
+    - study_additional_info
+  study:
+    - study

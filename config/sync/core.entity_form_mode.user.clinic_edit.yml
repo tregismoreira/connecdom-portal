@@ -1,0 +1,10 @@
+uuid: dacf4158-2369-496a-addc-c1e41a0c1f40
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - user
+id: user.clinic_edit
+label: 'Centro de Imagem: Edição'
+targetEntityType: user
+cache: true

@@ -1,0 +1,27 @@
+uuid: 9b8d84ae-3b22-48bb-b671-a8ad6283ae7d
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_orthanc
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: YFrwftNZlUXJGDGdrhtAULCMBTEeITKreoIA3VwRE7c
+id: series.field_series_protocol_name
+field_name: field_series_protocol_name
+entity_type: series
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

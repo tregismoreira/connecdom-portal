@@ -1,0 +1,14 @@
+uuid: 45ff6f97-bd81-43a0-a46b-85dd1951bbfe
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - user.role.clinic
+  module:
+    - user
+id: user_add_role_action.clinic
+label: 'Add the Clínica role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: clinic

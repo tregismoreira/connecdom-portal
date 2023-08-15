@@ -1,0 +1,26 @@
+uuid: f6cc1933-8063-49d1-8282-00cf69a28bd7
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_orthanc
+    - datetime
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: 1FKIjDgZtz39iL4BX1KhSK8ePyn_V_dXj72ccY11Ons
+id: study.field_study_date
+field_name: field_study_date
+entity_type: study
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

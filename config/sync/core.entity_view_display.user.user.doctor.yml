@@ -1,0 +1,326 @@
+uuid: c4b00fe0-d7d4-4162-bd06-83b7827d0033
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.doctor
+    - field.field.user.user.field_access_token
+    - field.field.user.user.field_address
+    - field.field.user.user.field_bank
+    - field.field.user.user.field_bank_account
+    - field.field.user.user.field_bank_branch
+    - field.field.user.user.field_billing_cnpj
+    - field.field.user.user.field_billing_cpf
+    - field.field.user.user.field_billing_type
+    - field.field.user.user.field_clinic_branch
+    - field.field.user.user.field_clinic_staff
+    - field.field.user.user.field_cnpj
+    - field.field.user.user.field_company
+    - field.field.user.user.field_contact_name
+    - field.field.user.user.field_cpf
+    - field.field.user.user.field_crm_number
+    - field.field.user.user.field_crm_state
+    - field.field.user.user.field_curriculum
+    - field.field.user.user.field_email
+    - field.field.user.user.field_fullname
+    - field.field.user.user.field_graduation
+    - field.field.user.user.field_graduation_complement
+    - field.field.user.user.field_graduation_others
+    - field.field.user.user.field_graduation_post
+    - field.field.user.user.field_locality
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_signature
+    - field.field.user.user.field_terms_autonomy
+    - field.field.user.user.field_terms_of_use
+    - field.field.user.user.user_picture
+    - image.style.medium
+  module:
+    - address
+    - ds
+    - field_group
+    - file
+    - image
+    - options
+    - paragraphs
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bs_2col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        layout:
+          wrapper: div
+          classes:
+            row: row
+          add_layout_class: 1
+          attributes: ''
+        regions:
+          left:
+            wrapper: div
+            classes:
+              col-sm-2: col-sm-2
+            add_region_classes: 1
+            attributes: ''
+          right:
+            wrapper: div
+            classes:
+              col-sm-10: col-sm-10
+            add_region_classes: 1
+            attributes: ''
+    regions:
+      left:
+        - user_picture
+      right:
+        - field_graduation
+        - field_email
+        - field_phone
+        - user_title
+        - field_graduation_post
+        - group_crm
+        - field_graduation_complement
+        - field_graduation_others
+        - group_locality
+        - field_curriculum
+        - group_curriculum
+        - group_contact
+        - group_billing
+        - field_billing_type
+        - field_billing_cpf
+        - field_billing_cnpj
+        - field_bank
+        - field_bank_branch
+        - field_bank_account
+        - field_locality
+        - field_crm_number
+        - field_crm_state
+    fields:
+      user_title:
+        plugin_id: user_title
+        weight: 1
+        label: hidden
+        formatter: default
+  field_group:
+    group_crm:
+      children:
+        - field_crm_number
+        - field_crm_state
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+      label: CRM
+    group_locality:
+      children:
+        - field_locality
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+      label: Localidade
+    group_curriculum:
+      children:
+        - field_graduation
+        - field_graduation_post
+        - field_graduation_complement
+        - field_graduation_others
+        - field_curriculum
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+      label: Currículo
+    group_contact:
+      children:
+        - field_email
+        - field_phone
+      parent_name: ''
+      weight: 5
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: has-private-info
+        description: "As informações abaixo são privadas. Somente você e a nossa equipe podem visualizá-las.\t"
+      label: 'Dados para contato'
+    group_billing:
+      children:
+        - field_billing_type
+        - field_billing_cpf
+        - field_billing_cnpj
+        - field_bank
+        - field_bank_branch
+        - field_bank_account
+      parent_name: ''
+      weight: 6
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: has-private-info
+        description: "As informações abaixo são privadas. Somente você e a nossa equipe podem visualizá-las.\t"
+      label: 'Dados de faturamento'
+_core:
+  default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
+id: user.user.doctor
+targetEntityType: user
+bundle: user
+mode: doctor
+content:
+  field_bank:
+    type: string
+    weight: 10
+    region: right
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_bank_account:
+    type: string
+    weight: 12
+    region: right
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_bank_branch:
+    type: string
+    weight: 11
+    region: right
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_billing_cnpj:
+    type: string
+    weight: 9
+    region: right
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_billing_cpf:
+    type: string
+    weight: 8
+    region: right
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_billing_type:
+    type: list_default
+    weight: 7
+    region: right
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_crm_number:
+    type: string
+    weight: 21
+    region: right
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_crm_state:
+    type: list_key
+    weight: 22
+    region: right
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_curriculum:
+    type: file_default
+    weight: 4
+    region: right
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+  field_email:
+    type: basic_string
+    weight: 0
+    region: right
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_graduation:
+    type: paragraph_summary
+    weight: 0
+    region: right
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_graduation_complement:
+    type: paragraph_summary
+    weight: 2
+    region: right
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_graduation_others:
+    type: basic_string
+    weight: 3
+    region: right
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_graduation_post:
+    type: paragraph_summary
+    weight: 1
+    region: right
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_locality:
+    type: address_default
+    weight: 13
+    region: right
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_phone:
+    type: string
+    weight: 1
+    region: right
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_picture:
+    type: image
+    weight: 0
+    region: left
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_access_token: true
+  field_address: true
+  field_clinic_branch: true
+  field_clinic_staff: true
+  field_cnpj: true
+  field_company: true
+  field_contact_name: true
+  field_cpf: true
+  field_fullname: true
+  field_signature: true
+  field_terms_autonomy: true
+  field_terms_of_use: true
+  langcode: true
+  member_for: true
+  realname: true

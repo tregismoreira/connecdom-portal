@@ -1,0 +1,22 @@
+uuid: 5c40824e-c6b7-4d13-9626-9d402f11a5e6
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - connecdom_bootstrap
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: connecdom_bootstrap_messages
+theme: connecdom_bootstrap
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

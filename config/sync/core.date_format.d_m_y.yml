@@ -1,0 +1,8 @@
+uuid: 1cda9eed-6d0a-47b2-93f9-e8d77ad28878
+langcode: pt-br
+status: true
+dependencies: {  }
+id: d_m_y
+label: d/m/Y
+locked: false
+pattern: d/m/Y

@@ -1,0 +1,21 @@
+uuid: 568e7b71-6876-4d4d-9ca4-99092fb1c8eb
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.connecdom_activity.field_activity_action
+  module:
+    - connecdom_activity
+    - options
+id: connecdom_activity.connecdom_activity.field_activity_action
+field_name: field_activity_action
+entity_type: connecdom_activity
+bundle: connecdom_activity
+label: Action
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

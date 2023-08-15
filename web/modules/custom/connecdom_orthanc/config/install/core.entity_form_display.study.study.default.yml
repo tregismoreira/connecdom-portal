@@ -1,0 +1,69 @@
+uuid: 6650cef2-9c43-41c5-a975-a2c510ab2390
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.study.study.field_physician_name
+    - field.field.study.study.field_study_date
+    - field.field.study.study.field_study_description
+    - field.field.study.study.field_study_institution_name
+    - field.field.study.study.field_study_parent_patient
+    - field.field.study.study.field_study_series
+  module:
+    - connecdom_orthanc
+    - datetime
+id: study.study.default
+targetEntityType: study
+bundle: study
+mode: default
+content:
+  field_physician_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_study_date:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_study_description:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_study_institution_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_study_parent_patient:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_study_series:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }
+

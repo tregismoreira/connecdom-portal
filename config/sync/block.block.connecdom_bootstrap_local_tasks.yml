@@ -1,0 +1,22 @@
+uuid: 38fdb352-e73f-46c7-a8bd-a7471bfd73d4
+langcode: pt-br
+status: true
+dependencies:
+  theme:
+    - connecdom_bootstrap
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: connecdom_bootstrap_local_tasks
+theme: connecdom_bootstrap
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Abas
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

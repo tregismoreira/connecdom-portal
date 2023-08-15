@@ -1,0 +1,14 @@
+uuid: 3e526bbf-543c-4a49-bc09-910a8e58e0ae
+langcode: pt-br
+status: true
+dependencies: {  }
+id: report_study
+label: 'Report <> Study'
+enabled: true
+first_field: field_report_study
+second_field: field_study_reports
+bundles:
+  node:
+    - report
+  study:
+    - study

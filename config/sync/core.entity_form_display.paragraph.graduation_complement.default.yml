@@ -1,0 +1,48 @@
+uuid: fee3b485-be54-4a44-ad46-3da229454784
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.graduation_complement.field_graduation_institution
+    - field.field.paragraph.graduation_complement.field_graduation_subject
+    - field.field.paragraph.graduation_complement.field_graduation_type
+    - field.field.paragraph.graduation_complement.field_graduation_year
+    - paragraphs.paragraphs_type.graduation_complement
+id: paragraph.graduation_complement.default
+targetEntityType: paragraph
+bundle: graduation_complement
+mode: default
+content:
+  field_graduation_institution:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_graduation_subject:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_graduation_type:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_graduation_year:
+    weight: 3
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

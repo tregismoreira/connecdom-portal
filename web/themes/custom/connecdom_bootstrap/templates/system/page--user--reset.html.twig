@@ -1,0 +1,29 @@
+<div class="auth-wrapper">
+  <div class="box">
+    <div class="top">
+      <h2 class="title">{{ 'Reset password'|t }}</h2>
+    </div>
+
+    <div class="middle">
+      {% if page.highlighted %}
+        {% block highlighted %}
+          <div class="highlighted">{{ page.highlighted }}</div>
+        {% endblock %}
+      {% endif %}
+
+      {{ page.content|without('connecdom_bootstrap_local_tasks', 'connecdom_bootstrap_page_title') }}
+    </div>
+
+    <div class="bottom">
+      <div class="login-link">
+        {{ 'Already have an account?'|t }} <a href="{{ path('user.login') }}">{{ 'Login'|t }}</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta">
+    <h3>{{ 'Are you a Doctor?'|t }}</h3>
+    <h4>{{ 'Join us and start working for our partners issuing medical reports remotely.'|t }}</h4>
+    <a href="{{ path('multiple_registration.role_registration_page', {'rid': 'doctor'}) }}" class="btn btn-danger btn-lg">{{ 'Register a new account'|t }}</a>
+  </div>
+</div>

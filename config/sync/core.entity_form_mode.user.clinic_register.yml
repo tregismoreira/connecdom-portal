@@ -1,0 +1,10 @@
+uuid: 57448efe-8e81-4978-9431-d7201397a59d
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - user
+id: user.clinic_register
+label: 'Centro de Imagem: Registro'
+targetEntityType: user
+cache: true

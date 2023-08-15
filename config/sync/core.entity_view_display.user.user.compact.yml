@@ -1,0 +1,90 @@
+uuid: 94723b81-bbc7-4636-a85e-d6745dcc302b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.field_access_token
+    - field.field.user.user.field_address
+    - field.field.user.user.field_bank
+    - field.field.user.user.field_bank_account
+    - field.field.user.user.field_bank_branch
+    - field.field.user.user.field_billing_cnpj
+    - field.field.user.user.field_billing_cpf
+    - field.field.user.user.field_billing_type
+    - field.field.user.user.field_clinic_branch
+    - field.field.user.user.field_clinic_staff
+    - field.field.user.user.field_cnpj
+    - field.field.user.user.field_company
+    - field.field.user.user.field_contact_name
+    - field.field.user.user.field_cpf
+    - field.field.user.user.field_crm_number
+    - field.field.user.user.field_crm_state
+    - field.field.user.user.field_curriculum
+    - field.field.user.user.field_email
+    - field.field.user.user.field_fullname
+    - field.field.user.user.field_graduation
+    - field.field.user.user.field_graduation_complement
+    - field.field.user.user.field_graduation_others
+    - field.field.user.user.field_graduation_post
+    - field.field.user.user.field_locality
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_signature
+    - field.field.user.user.field_terms_autonomy
+    - field.field.user.user.field_terms_of_use
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  user_picture:
+    type: image
+    weight: 0
+    region: content
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+    label: hidden
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_access_token: true
+  field_address: true
+  field_bank: true
+  field_bank_account: true
+  field_bank_branch: true
+  field_billing_cnpj: true
+  field_billing_cpf: true
+  field_billing_type: true
+  field_clinic_branch: true
+  field_clinic_staff: true
+  field_cnpj: true
+  field_company: true
+  field_contact_name: true
+  field_cpf: true
+  field_crm_number: true
+  field_crm_state: true
+  field_curriculum: true
+  field_email: true
+  field_fullname: true
+  field_graduation: true
+  field_graduation_complement: true
+  field_graduation_others: true
+  field_graduation_post: true
+  field_locality: true
+  field_phone: true
+  field_signature: true
+  field_terms_autonomy: true
+  field_terms_of_use: true
+  langcode: true
+  member_for: true
+  realname: true

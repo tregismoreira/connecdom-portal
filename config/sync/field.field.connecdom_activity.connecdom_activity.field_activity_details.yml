@@ -1,0 +1,20 @@
+uuid: abf283de-7ee6-4039-ba48-9052b7557e43
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.connecdom_activity.field_activity_details
+  module:
+    - connecdom_activity
+id: connecdom_activity.connecdom_activity.field_activity_details
+field_name: field_activity_details
+entity_type: connecdom_activity
+bundle: connecdom_activity
+label: Details
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

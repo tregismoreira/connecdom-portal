@@ -1,0 +1,23 @@
+uuid: 3e637545-403d-410b-a910-2f5cc775cc43
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - address
+    - field_permissions
+    - user
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: user.field_address
+field_name: field_address
+entity_type: user
+type: address
+settings: {  }
+module: address
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

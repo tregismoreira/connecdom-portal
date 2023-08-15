@@ -1,0 +1,26 @@
+uuid: e85d22e0-0471-4daf-8e18-f2ce60c28f27
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.patient.field_patient_id
+  module:
+    - connecdom_orthanc
+_core:
+  default_config_hash: IVFEc7_YawNAf_VmEEB8uBt38J-5_OsAhSuPVycjRCs
+id: patient.patient.field_patient_id
+field_name: field_patient_id
+entity_type: patient
+bundle: patient
+label: 'Patient ID'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

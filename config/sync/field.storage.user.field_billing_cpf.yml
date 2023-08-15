@@ -1,0 +1,25 @@
+uuid: 63c8d5fa-236f-44f0-b877-6d583fa28b38
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - user
+third_party_settings:
+  field_permissions:
+    permission_type: private
+id: user.field_billing_cpf
+field_name: field_billing_cpf
+entity_type: user
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

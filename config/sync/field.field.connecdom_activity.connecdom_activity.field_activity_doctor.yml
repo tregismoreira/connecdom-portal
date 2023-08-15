@@ -1,0 +1,34 @@
+uuid: 289b4751-1327-4c93-bfbc-0a3d2ee40956
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.connecdom_activity.field_activity_doctor
+  module:
+    - connecdom_activity
+id: connecdom_activity.connecdom_activity.field_activity_doctor
+field_name: field_activity_doctor
+entity_type: connecdom_activity
+bundle: connecdom_activity
+label: Doctor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        doctor: doctor
+        administrator: '0'
+        clinic: '0'
+        super_administrator: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

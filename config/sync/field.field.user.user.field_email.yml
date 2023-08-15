@@ -1,0 +1,28 @@
+uuid: 07220158-1191-4b60-a148-6510f3c8d868
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_email
+  module:
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      authenticated: 0
+      clinic: 0
+      doctor: 0
+    user_additional_register_form_required: null
+id: user.user.field_email
+field_name: field_email
+entity_type: user
+bundle: user
+label: Email
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: email

@@ -1,0 +1,22 @@
+uuid: c636d779-6f75-4fc8-bb4c-fcbc38b74ad4
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.series.field_series_protocol_name
+  module:
+    - connecdom_orthanc
+_core:
+  default_config_hash: TYLqYoBT-QazzzQsXG3P69XetJn9w1jl3hm0PA4ZM7g
+id: series.series.field_series_protocol_name
+field_name: field_series_protocol_name
+entity_type: series
+bundle: series
+label: 'Protocol Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

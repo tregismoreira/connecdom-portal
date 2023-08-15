@@ -1,0 +1,37 @@
+uuid: 06ea9eb7-4756-40f7-b24b-f8d0d261267a
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - options
+    - paragraphs
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: paragraph.field_graduation_type
+field_name: field_graduation_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: mestrado
+      label: Mestrado
+    -
+      value: doutorado
+      label: Doutorado
+    -
+      value: r4
+      label: R4
+    -
+      value: r5
+      label: R5
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

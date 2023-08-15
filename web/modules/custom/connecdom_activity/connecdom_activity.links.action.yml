@@ -1,0 +1,5 @@
+entity.connecdom_activity.add_form:
+  route_name: entity.connecdom_activity.add_form
+  title: 'Add Connecdom Activity'
+  appears_on:
+    - entity.connecdom_activity.collection

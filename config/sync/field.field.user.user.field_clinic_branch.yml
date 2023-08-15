@@ -1,0 +1,20 @@
+uuid: 07ee4dac-175e-4d71-a68a-a29a7f65a207
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_clinic_branch
+  module:
+    - user
+id: user.user.field_clinic_branch
+field_name: field_clinic_branch
+entity_type: user
+bundle: user
+label: Unidade
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

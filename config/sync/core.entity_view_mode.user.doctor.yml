@@ -1,0 +1,10 @@
+uuid: 97ad0849-6216-4d42-a627-b996b0739f23
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - user
+id: user.doctor
+label: Médico
+targetEntityType: user
+cache: true

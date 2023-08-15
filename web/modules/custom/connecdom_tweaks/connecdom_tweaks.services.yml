@@ -1,0 +1,5 @@
+services:
+  connecdom_tweaks:
+    class: '\Drupal\connecdom_tweaks\EventSubscriber\ConnecdomTweaksEventSubscriber'
+    tags:
+      - { name: "event_subscriber" }

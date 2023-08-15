@@ -1,0 +1,22 @@
+uuid: 2366e91c-40f4-4ae3-8040-3f78ee3843ef
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.study_additional_info
+id: node.study_additional_info.promote
+field_name: promote
+entity_type: node
+bundle: study_additional_info
+label: 'Promovido para a página inicial'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Habilitado
+  off_label: Desliga
+field_type: boolean

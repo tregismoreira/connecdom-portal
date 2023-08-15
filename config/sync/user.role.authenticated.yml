@@ -1,0 +1,31 @@
+uuid: b332c125-6319-4f50-8867-71061b9a315b
+langcode: pt-br
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Usuário autenticado'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access kint'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'access user profiles'
+  - 'create clinic content'
+  - 'create doctor content'
+  - 'edit own clinic content'
+  - 'edit own doctor content'
+  - 'post comments'
+  - 'restful post connecdom_orthanc_auth_resource'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'view field_study_assignee'
+  - 'view field_study_doctor'
+  - 'view own field_study_assignee'
+  - 'view own field_study_doctor'
+  - 'view own unpublished content'

@@ -1,0 +1,25 @@
+uuid: 670454ba-ca94-4f6d-bbab-e6bb71fd718a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_info_study
+    - node.type.study_additional_info
+id: node.study_additional_info.field_additional_info_study
+field_name: field_additional_info_study
+entity_type: node
+bundle: study_additional_info
+label: Study
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:study'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

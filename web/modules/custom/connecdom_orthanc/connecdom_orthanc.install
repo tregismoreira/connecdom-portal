@@ -1,0 +1,117 @@
+<?php
+
+use Drupal\Core\Database\Database;
+
+function connecdom_orthanc_schema() {
+  $schema['connecdom_orthanc_changes'] = array(
+    'description' => 'The base table for Orthanc changes.',
+    'fields' => array(
+      'change_type' => array(
+        'description' => 'ChangeType',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'date' => array(
+        'description' => 'Date',
+        'type' => 'varchar',
+        'length' => 15,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'id' => array(
+        'description' => 'ID',
+        'type' => 'varchar',
+        'length' => 44,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'path' => array(
+        'description' => 'Path',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'resource_type' => array(
+        'description' => 'ResourceType',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'seq' => array(
+        'description' => 'Seq',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+    ),
+    'primary key' => array(
+      'seq',
+    ),
+  );
+
+  return $schema;
+}
+
+/**
+ * Create database schema to store the Orthanc changes.
+ */
+function connecdom_orthanc_update_8201() {
+  $spec = array(
+    'description' => 'The base table for Orthanc changes.',
+    'fields' => array(
+      'change_type' => array(
+        'description' => 'ChangeType',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'date' => array(
+        'description' => 'Date',
+        'type' => 'varchar',
+        'length' => 15,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'id' => array(
+        'description' => 'ID',
+        'type' => 'varchar',
+        'length' => 44,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'path' => array(
+        'description' => 'Path',
+        'type' => 'varchar',
+        'length' => 64,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'resource_type' => array(
+        'description' => 'ResourceType',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'seq' => array(
+        'description' => 'Seq',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+    ),
+    'primary key' => array(
+      'seq',
+    ),
+  );
+
+  $schema = Database::getConnection()->schema();
+  $schema->createTable('connecdom_orthanc_changes', $spec);
+}

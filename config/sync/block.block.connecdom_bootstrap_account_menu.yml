@@ -1,0 +1,27 @@
+uuid: cce2cc81-d752-443b-9c54-4b0c18bea7b4
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - connecdom_bootstrap
+_core:
+  default_config_hash: DweBpscQZdG0-fHkSpUzdYucrNH45G_KF7Z82V-oyQM
+id: connecdom_bootstrap_account_menu
+theme: connecdom_bootstrap
+region: navigation_collapsible
+weight: -4
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

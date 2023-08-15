@@ -1,0 +1,25 @@
+uuid: 7a2921a3-f275-4ee6-8130-d906d52bc1fe
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_report_study
+    - node.type.report
+id: node.report.field_report_study
+field_name: field_report_study
+entity_type: node
+bundle: report
+label: Study
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:study'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

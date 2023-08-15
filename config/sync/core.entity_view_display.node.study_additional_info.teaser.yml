@@ -1,0 +1,38 @@
+uuid: ae010731-361b-4cba-bf5d-cfe894fcac4d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.study_additional_info.body
+    - field.field.node.study_additional_info.field_additional_info_study
+    - field.field.node.study_additional_info.field_attachments
+    - node.type.study_additional_info
+  module:
+    - text
+    - user
+id: node.study_additional_info.teaser
+targetEntityType: node
+bundle: study_additional_info
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_additional_info_study: true
+  field_attachments: true
+  langcode: true

@@ -1,0 +1,63 @@
+uuid: 46bafa9a-9a11-46a1-b9be-bc6778fea233
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_address
+  module:
+    - address
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      authenticated: 0
+      clinic: 0
+      doctor: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      clinic: 0
+      doctor: 0
+id: user.user.field_address
+field_name: field_address
+entity_type: user
+bundle: user
+label: Endereço
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    country_code: BR
+    langcode: ''
+    address_line1: ''
+    address_line2: ''
+    dependent_locality: ''
+    locality: ''
+    administrative_area: ''
+    postal_code: ''
+    given_name: null
+    additional_name: null
+    family_name: null
+    organization: null
+    sorting_code: null
+default_value_callback: ''
+settings:
+  available_countries:
+    BR: BR
+  langcode_override: ''
+  field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: hidden
+    addressLine2:
+      override: hidden
+    sortingCode:
+      override: hidden
+  fields: {  }
+field_type: address

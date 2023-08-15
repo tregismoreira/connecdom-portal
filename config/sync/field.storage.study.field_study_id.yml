@@ -1,0 +1,25 @@
+uuid: 74625638-27ca-4806-bcf4-49c33d837c21
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_orthanc
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: study.field_study_id
+field_name: field_study_id
+entity_type: study
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

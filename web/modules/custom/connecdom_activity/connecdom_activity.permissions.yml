@@ -1,0 +1,20 @@
+add connecdom activity entities:
+  title: 'Create new Connecdom Activity entities'
+
+administer connecdom activity entities:
+  title: 'Administer Connecdom Activity entities'
+  description: 'Allow to access the administration form to configure Connecdom Activity entities.'
+  restrict access: true
+
+delete connecdom activity entities:
+  title: 'Delete Connecdom Activity entities'
+
+edit connecdom activity entities:
+  title: 'Edit Connecdom Activity entities'
+
+view published connecdom activity entities:
+  title: 'View published Connecdom Activity entities'
+
+view unpublished connecdom activity entities:
+  title: 'View unpublished Connecdom Activity entities'
+
