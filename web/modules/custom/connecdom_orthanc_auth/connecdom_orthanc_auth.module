@@ -1,0 +1,22 @@
+<?php
+
+/**
+ * Implements hook_cronapi().
+ */
+function connecdom_orthanc_auth_cronapi() {
+  $items = array();
+  $items['connecdom_orthanc_auth_clean_expired_tokens'] = array(
+    'title' => t('Delete expired access tokens.'),
+  );
+  return $items;
+}
+
+/**
+ * The callback for the cron job to delete expired tokens.
+ */
+function connecdom_orthanc_auth_clean_expired_tokens($job) {
+  $database = \Drupal::database();
+  $database->delete('connecdom_orthanc_auth')
+    ->condition('expire', time(), '<')
+    ->execute();
+}

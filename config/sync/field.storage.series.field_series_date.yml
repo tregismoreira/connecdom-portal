@@ -1,0 +1,26 @@
+uuid: 0a88189e-da4f-4906-bb08-af6174b29567
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_orthanc
+    - datetime
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: S1MJwrnL6fLWuRHNDcVgcgcUKVy7G4D9C-Wxv-3Z6cU
+id: series.field_series_date
+field_name: field_series_date
+entity_type: series
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

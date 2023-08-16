@@ -1,0 +1,7 @@
+services:
+  connecdom_orthanc.controller:
+    class: Drupal\connecdom_orthanc\Controller\ConnecdomOrthancController
+    arguments: []
+  connecdom_orthanc.rest_api:
+    class: Drupal\connecdom_orthanc\ConnecdomOrthancRestApi
+    arguments: []

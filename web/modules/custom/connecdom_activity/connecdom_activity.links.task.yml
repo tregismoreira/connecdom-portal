@@ -1,0 +1,21 @@
+# Connecdom Activity routing definition
+connecdom_activity.settings_tab:
+  route_name: connecdom_activity.settings
+  title: 'Settings'
+  base_route: connecdom_activity.settings
+
+entity.connecdom_activity.canonical:
+  route_name: entity.connecdom_activity.canonical
+  base_route: entity.connecdom_activity.canonical
+  title: 'View'
+
+entity.connecdom_activity.edit_form:
+  route_name: entity.connecdom_activity.edit_form
+  base_route: entity.connecdom_activity.canonical
+  title: 'Edit'
+
+entity.connecdom_activity.delete_form:
+  route_name:  entity.connecdom_activity.delete_form
+  base_route:  entity.connecdom_activity.canonical
+  title: Delete
+  weight: 10

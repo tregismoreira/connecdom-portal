@@ -1,0 +1,32 @@
+uuid: 185d9a3a-011c-4b2f-8854-25afd9699657
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_terms_of_use
+  module:
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      authenticated: 0
+      clinic: 0
+      doctor: 0
+    user_additional_register_form_required: null
+id: user.user.field_terms_of_use
+field_name: field_terms_of_use
+entity_type: user
+bundle: user
+label: 'Termos de uso'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'Confirmo que li e aceito os <a href="/sites/default/files/connecdom-termos-v1.0.pdf" target="_blank">termos de uso</a>'
+  off_label: Desliga
+field_type: boolean

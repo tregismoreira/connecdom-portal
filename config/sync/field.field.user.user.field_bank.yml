@@ -1,0 +1,28 @@
+uuid: 381e911d-2f65-432a-b516-f82432c151ab
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_bank
+  module:
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      authenticated: 0
+      clinic: 0
+      doctor: 0
+    user_additional_register_form_required: null
+id: user.user.field_bank
+field_name: field_bank
+entity_type: user
+bundle: user
+label: Banco
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

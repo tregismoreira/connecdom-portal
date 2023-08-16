@@ -1,0 +1,14 @@
+uuid: 63535632-03e2-4669-aa6e-b2fa9c0d278c
+langcode: pt-br
+status: true
+dependencies: {  }
+id: study_patient
+label: 'Study <> Patient'
+enabled: true
+first_field: field_study_parent_patient
+second_field: field_patient_studies
+bundles:
+  patient:
+    - patient
+  study:
+    - study

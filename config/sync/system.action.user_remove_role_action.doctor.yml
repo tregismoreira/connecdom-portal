@@ -1,0 +1,14 @@
+uuid: 68408ab6-3f89-485e-86e4-f5836197d012
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - user.role.doctor
+  module:
+    - user
+id: user_remove_role_action.doctor
+label: 'Remove the Médico role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: doctor

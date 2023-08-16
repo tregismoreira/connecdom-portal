@@ -1,0 +1,20 @@
+uuid: 4b2a811a-1eff-449b-aaf7-577812fa98a2
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.study.field_physician_name
+  module:
+    - connecdom_orthanc
+id: study.study.field_physician_name
+field_name: field_physician_name
+entity_type: study
+bundle: study
+label: 'Physician Name'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

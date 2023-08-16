@@ -1,0 +1,27 @@
+uuid: 5660cdb4-7cf8-4666-81a1-e0485e3f6e51
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_orthanc
+    - field_permissions
+    - file
+third_party_settings:
+  field_permissions:
+    permission_type: private
+id: study.field_study_file
+field_name: field_study_file
+entity_type: study
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: private
+  target_type: file
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

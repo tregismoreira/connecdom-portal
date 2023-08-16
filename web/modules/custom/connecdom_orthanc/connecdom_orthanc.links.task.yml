@@ -1,0 +1,109 @@
+# Patient routing definition
+patient.settings_tab:
+  route_name: patient.settings
+  title: 'Settings'
+  base_route: patient.settings
+
+entity.patient.canonical:
+  route_name: entity.patient.canonical
+  base_route: entity.patient.canonical
+  title: 'View'
+
+entity.patient.edit_form:
+  route_name: entity.patient.edit_form
+  base_route: entity.patient.canonical
+  title: 'Edit'
+
+entity.patient.delete_form:
+  route_name: entity.patient.delete_form
+  base_route: entity.patient.canonical
+  title: Delete
+  weight: 10
+
+# Study routing definition
+study.settings_tab:
+  route_name: study.settings
+  title: 'Settings'
+  base_route: study.settings
+
+entity.study.canonical:
+  route_name: entity.study.canonical
+  base_route: entity.study.canonical
+  title: 'View'
+
+entity.study.edit_form:
+  route_name: entity.study.edit_form
+  base_route: entity.study.canonical
+  title: 'Edit'
+
+entity.study.delete_form:
+  route_name: entity.study.delete_form
+  base_route: entity.study.canonical
+  title: Delete
+  weight: 10
+
+# Series routing definition
+series.settings_tab:
+  route_name: series.settings
+  title: 'Settings'
+  base_route: series.settings
+
+entity.series.canonical:
+  route_name: entity.series.canonical
+  base_route: entity.series.canonical
+  title: 'View'
+
+entity.series.edit_form:
+  route_name: entity.series.edit_form
+  base_route: entity.series.canonical
+  title: 'Edit'
+
+entity.series.delete_form:
+  route_name: entity.series.delete_form
+  base_route: entity.series.canonical
+  title: Delete
+  weight: 10
+
+# Instance routing definition
+instance.settings_tab:
+  route_name: instance.settings
+  title: 'Settings'
+  base_route: instance.settings
+
+entity.instance.canonical:
+  route_name: entity.instance.canonical
+  base_route: entity.instance.canonical
+  title: 'View'
+
+entity.instance.edit_form:
+  route_name: entity.instance.edit_form
+  base_route: entity.instance.canonical
+  title: 'Edit'
+
+entity.instance.delete_form:
+  route_name: entity.instance.delete_form
+  base_route: entity.instance.canonical
+  title: Delete
+  weight: 10
+
+# Modality routing definition
+modality.settings_tab:
+  route_name: modality.settings
+  title: 'Settings'
+  base_route: modality.settings
+
+entity.modality.canonical:
+  route_name: entity.modality.canonical
+  base_route: entity.modality.canonical
+  title: 'View'
+
+entity.modality.edit_form:
+  route_name: entity.modality.edit_form
+  base_route: entity.modality.canonical
+  title: 'Edit'
+
+entity.modality.delete_form:
+  route_name: entity.modality.delete_form
+  base_route: entity.modality.canonical
+  title: Delete
+  weight: 10

@@ -1,0 +1,23 @@
+uuid: 3f8a841d-c13e-4e32-a636-a2ebb31d8a72
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_activity
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: connecdom_activity.field_activity_details
+field_name: field_activity_details
+entity_type: connecdom_activity
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

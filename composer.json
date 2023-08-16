@@ -1,0 +1,143 @@
+{
+    "name": "drupal-composer/drupal-project",
+    "description": "Project template for Drupal 9 projects with Composer",
+    "type": "project",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "",
+            "role": ""
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "fourbeet/brazilian_ids",
+                "version": "master",
+                "type": "drupal-module",
+                "dist": {
+                    "url": "https://github.com/fourbeet/brazilian_ids/archive/master.zip",
+                    "type": "zip"
+                },
+                "require": {
+                    "composer/installers": "^1.2"
+                }
+            }
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
+        "drupal/address": "^1.12",
+        "drupal/admin_toolbar": "^3.4",
+        "drupal/antibot": "^2.0",
+        "drupal/auto_entitylabel": "^3.0",
+        "drupal/bootstrap": "^3.29",
+        "drupal/bootstrap_layouts": "^5.3",
+        "drupal/cer": "^5.0@beta",
+        "drupal/conditional_fields": "^4.0@alpha",
+        "drupal/config_ignore": "^2.4",
+        "drupal/console": "^1.9",
+        "drupal/core-composer-scaffold": "^9.4",
+        "drupal/core-recommended": "^9.4",
+        "drupal/devel": "^5.1",
+        "drupal/ds": "^3.15",
+        "drupal/email_registration": "^1.2",
+        "drupal/entity_delete": "^2.0@beta",
+        "drupal/entity_print": "^2.13",
+        "drupal/field_group": "^3.4",
+        "drupal/field_permissions": "^1.2",
+        "drupal/filefield_paths": "^1.0@beta",
+        "drupal/handy_cache_tags": "^1.4",
+        "drupal/hide_revision_field": "^2.3",
+        "drupal/htmlmail": "^3.0@alpha",
+        "drupal/ip_consumer_auth": "^2.0@alpha",
+        "drupal/mailsystem": "^4.4",
+        "drupal/mimemail": "^1.0@alpha",
+        "drupal/multiple_registration": "^3.2",
+        "drupal/paragraphs": "^1.15",
+        "drupal/pathauto": "^1.11",
+        "drupal/r4032login": "^2.2",
+        "drupal/realname": "^2.0@beta",
+        "drupal/recaptcha": "^3.2",
+        "drupal/restui": "^1.21",
+        "drupal/smtp": "^1.2",
+        "drupal/ultimate_cron": "^2.0@alpha",
+        "drupal/views_bulk_edit": "^2.9",
+        "drupal/views_bulk_operations": "^4.2",
+        "drupal/views_field_permissions": "^2.0@alpha",
+        "drush/drush": "^11.0",
+        "fourbeet/brazilian_ids": "dev-master",
+        "kint-php/kint": "^5.0",
+        "mikehaertl/phpwkhtmltopdf": "^2.5",
+        "tecnickcom/tcpdf": "^6.6",
+        "vlucas/phpdotenv": "^5.1",
+        "webflo/drupal-finder": "^1.2"
+    },
+    "require-dev": {
+        "drupal/core-dev": "^9.4"
+    },
+    "conflict": {
+        "drupal/drupal": "*"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "discard-changes": true,
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "drupal/core-composer-scaffold": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "drupal/console-extend-plugin": true
+        }
+    },
+    "autoload": {
+        "classmap": [
+            "scripts/composer/ScriptHandler.php"
+        ],
+        "files": ["load.environment.php"]
+    },
+    "scripts": {
+        "pre-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "pre-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+        ],
+        "post-install-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ],
+        "post-update-cmd": [
+            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+        ]
+    },
+    "extra": {
+        "drupal-scaffold": {
+            "locations": {
+                "web-root": "web/"
+            }
+        },
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/Commands/contrib/{$name}": ["type:drupal-drush"]
+        },
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "patches": {
+        }
+    }
+}

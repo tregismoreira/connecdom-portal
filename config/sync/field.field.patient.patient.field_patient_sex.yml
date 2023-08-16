@@ -1,0 +1,23 @@
+uuid: 9c4e7081-3995-499c-bbae-3f9f46eaf36e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.patient.field_patient_sex
+  module:
+    - connecdom_orthanc
+    - options
+_core:
+  default_config_hash: H7MhKIQanpVLy5dCdrhWa7kjQRz2c1c9RyKUuGx45D4
+id: patient.patient.field_patient_sex
+field_name: field_patient_sex
+entity_type: patient
+bundle: patient
+label: 'Patient Sex'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

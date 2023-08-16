@@ -1,0 +1,58 @@
+uuid: a152e37b-1d56-4824-8af6-50cc10e1cae6
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.patient.patient.field_patient_birthdate
+    - field.field.patient.patient.field_patient_id
+    - field.field.patient.patient.field_patient_name
+    - field.field.patient.patient.field_patient_sex
+    - field.field.patient.patient.field_patient_studies
+  module:
+    - connecdom_orthanc
+    - datetime
+_core:
+  default_config_hash: 1YTTkdJaIxFPqXqXslEqGgr0JGxtHaR0pjDoHgnAMlc
+id: patient.patient.default
+targetEntityType: patient
+bundle: patient
+mode: default
+content:
+  field_patient_birthdate:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_patient_id:
+    weight: 2
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_patient_name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_patient_sex:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_patient_studies:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+      match_limit: 10
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden: {  }

@@ -1,0 +1,34 @@
+uuid: b90f67a0-f680-4fdd-b4cf-986503aea6b5
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.study.field_study_clinic
+  module:
+    - connecdom_orthanc
+id: study.study.field_study_clinic
+field_name: field_study_clinic
+entity_type: study
+bundle: study
+label: Clinic
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: true
+    filter:
+      type: role
+      role:
+        clinic: clinic
+        administrator: '0'
+        doctor: '0'
+        super_administrator: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

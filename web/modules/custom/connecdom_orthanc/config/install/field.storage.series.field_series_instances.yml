@@ -1,0 +1,23 @@
+uuid: a4fd49ad-80cf-4755-88a0-f6f366670f1b
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_orthanc
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: series.field_series_instances
+field_name: field_series_instances
+entity_type: series
+type: entity_reference
+settings:
+  target_type: instance
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

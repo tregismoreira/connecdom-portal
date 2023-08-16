@@ -1,0 +1,10 @@
+uuid: 14898749-e9c9-4f2e-8119-bc5146291881
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - user
+id: user.clinic
+label: 'Centro de Imagem'
+targetEntityType: user
+cache: true

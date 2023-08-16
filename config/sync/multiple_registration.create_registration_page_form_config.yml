@@ -1,0 +1,10 @@
+multiple_registration_path_clinic: user/register/clinic
+multiple_registration_url_clinic: /user/register/clinic
+multiple_registration_hidden_clinic: 0
+multiple_registration_form_mode_register_clinic: clinic_register
+multiple_registration_form_mode_edit_clinic: clinic_edit
+multiple_registration_path_doctor: user/register/doctor
+multiple_registration_url_doctor: /user/register/doctor
+multiple_registration_hidden_doctor: 0
+multiple_registration_form_mode_register_doctor: doctor_register
+multiple_registration_form_mode_edit_doctor: doctor_edit

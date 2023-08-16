@@ -1,0 +1,55 @@
+connecdom_orthanc.admin:
+  title: 'ConnecdomOrthanc'
+  route_name: connecdom_orthanc.admin
+  description: 'Administer ConnecdomOrthanc'
+  parent: system.admin_structure
+  weight: 100
+
+connecdom_orthanc.entity_types:
+  title: 'Entity types'
+  route_name: connecdom_orthanc.entity_types
+  description: 'List entity types'
+  parent: connecdom_orthanc.admin
+  weight: 1
+
+entity.patient.collection:
+  title: 'Patients'
+  route_name: entity.patient.collection
+  description: 'List Patient entities'
+  parent: connecdom_orthanc.entity_types
+  weight: 1
+
+entity.study.collection:
+  title: 'Studies'
+  route_name: entity.study.collection
+  description: 'List Study entities'
+  parent: connecdom_orthanc.entity_types
+  weight: 2
+
+entity.series.collection:
+  title: 'Series'
+  route_name: entity.series.collection
+  description: 'List Series entities'
+  parent: connecdom_orthanc.entity_types
+  weight: 3
+
+entity.instance.collection:
+  title: 'Instances'
+  route_name: entity.instance.collection
+  description: 'List Instance entities'
+  parent: connecdom_orthanc.entity_types
+  weight: 4
+
+connecdom_orthanc.modalities:
+  title: 'Modalities'
+  route_name: entity.modality.collection
+  description: 'List ConnecdomOrthanc modalities'
+  parent: connecdom_orthanc.admin
+  weight: 2
+
+connecdom_orthanc.settings:
+  title: 'Settings'
+  route_name: connecdom_orthanc.settings
+  description: 'ConnecdomOrthanc settings'
+  parent: connecdom_orthanc.admin
+  weight: 3

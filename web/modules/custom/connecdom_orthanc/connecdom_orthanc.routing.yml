@@ -1,0 +1,23 @@
+connecdom_orthanc.admin:
+  path: '/admin/structure/connecdom_orthanc'
+  defaults:
+    _controller: 'connecdom_orthanc.controller:adminOptions'
+    _title: 'ConnecdomOrthanc'
+  requirements:
+    _permission: 'administer connecdom_orthanc settings'
+
+connecdom_orthanc.entity_types:
+  path: '/admin/structure/connecdom_orthanc/types'
+  defaults:
+    _controller: 'connecdom_orthanc.controller:entityTypeList'
+    _title: 'Entity types'
+  requirements:
+    _permission: 'administer connecdom_orthanc settings'
+
+connecdom_orthanc.settings:
+  path: '/admin/structure/connecdom_orthanc/settings'
+  defaults:
+    _form: '\Drupal\connecdom_orthanc\Form\ConnecdomOrthancSettingsForm'
+    _title: 'Settings'
+  requirements:
+    _permission: 'administer connecdom_orthanc settings'

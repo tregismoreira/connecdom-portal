@@ -1,0 +1,6 @@
+name: "Connecdom Activity"
+type: module
+description: "Custom implementations for Activity"
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: "Connecdom"

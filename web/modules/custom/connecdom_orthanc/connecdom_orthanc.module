@@ -1,0 +1,47 @@
+<?php
+
+/**
+ * @file
+ * Contains connecdom_orthanc.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\connecdom_orthanc\ConnecdomOrthancRestApi;
+
+/**
+ * Implements hook_help().
+ */
+function connecdom_orthanc_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the connecdom_orthanc module.
+    case 'help.page.connecdom_orthanc':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('ConnecdomOrthanc') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_cronapi().
+ */
+function connecdom_orthanc_cronapi() {
+  $items = array();
+  $items['connecdom_orthanc_import_changes_cron'] = array(
+    'title' => t('Import Orthanc resources'),
+  );
+  return $items;
+}
+
+/**
+ * The callback for the cron job to import Orthanc resources.
+ */
+function connecdom_orthanc_import_changes_cron($job) {
+  $orthancRestApi = new ConnecdomOrthancRestApi();
+  $changes = $orthancRestApi->fetchChanges();
+  if ($changes) {
+    $orthancRestApi->importResources($changes->Changes);
+  }
+}

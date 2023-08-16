@@ -1,0 +1,25 @@
+uuid: e9ec6cf8-06a6-49d6-918b-1db2f5f4f246
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - field_permissions
+    - paragraphs
+    - user
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: user.field_graduation
+field_name: field_graduation
+entity_type: user
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

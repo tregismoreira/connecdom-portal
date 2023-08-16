@@ -1,0 +1,55 @@
+.address-container-inline {
+  & > .form-item {
+    vertical-align: top;
+  }
+}
+
+.field--widget-entity-reference-paragraphs {
+  .tabledrag-toggle-weight {
+    display: none;
+  }
+
+  .paragraphs-dropbutton-wrapper button {
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+  }
+
+  .table {
+    td {
+      padding: 10px !important;
+
+      .paragraph-type-top {
+        .paragraph-type-title {
+          display: none;
+        }
+        .paragraphs-dropbutton-wrapper {
+          margin-left: auto;
+        }
+      }
+    }
+    th.field-label {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+}
+
+.field--name-field-graduation-year {
+  label {
+    display: block !important;
+    margin-bottom: 5px !important;
+  }
+}
+
+.form-required:after {
+  width: 7px;
+  height: 7px;
+  margin-left: 5px;
+  background-size: 7px 7px;
+}
+
+div[id^='edit-field-locality-0-address-country-code'] {
+  display: none;
+}

@@ -1,0 +1,17 @@
+uuid: 0dcd4d0e-a70e-49ba-ac9a-437a49209032
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Additional Info'
+type: study_additional_info
+description: ''
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

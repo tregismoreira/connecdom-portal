@@ -1,0 +1,57 @@
+<?php
+
+use Drupal\connecdom_tweaks\Controller\ConnecdomTweaksController;
+use Drupal\views\ViewExecutable;
+use Drupal\user\Entity\User;
+use Drupal\file\Entity\File;
+
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+/**
+ * Implements template_preprocess_menu().
+ */
+function connecdom_bootstrap_preprocess_menu__account(&$variables) {
+  $account = \Drupal::currentUser();
+  $user = User::load($account->id());
+  $avatar = base_path() . drupal_get_path('theme', 'connecdom_bootstrap') . '/images/icon-user-circle.svg';
+
+  if ($user->user_picture->target_id) {
+    $file = File::load($user->user_picture->target_id);
+    $style = \Drupal::entityTypeManager()->getStorage('image_style')->load('avatar');
+    $avatar = $style->buildUrl($file->getFileUri());
+  }
+
+  // Set username and avatar values.
+  $variables['avatar'] = $avatar;
+  $variables['username'] = $user->getDisplayName();
+
+  // Chance cache context.
+  $variables['#cache']['contexts'][] = 'user';
+}
+
+/**
+ * Implements template_preprocess_menu_local_action().
+ */
+function connecdom_bootstrap_preprocess_menu_local_action(&$variables) {
+  $link = $variables['element']['#link'];
+  $link += array(
+    'localized_options' => array(),
+  );
+
+  $link['localized_options']['attributes']['class'][] = 'btn btn-md btn-success use-ajax';
+  $link['localized_options']['attributes']['data-dialog-type'] = 'modal';
+
+  $link['localized_options']['query']['destination'] = drupal_get_destination();
+
+  $variables['link'] = array(
+    '#type' => 'link',
+    '#title' => $link['title'],
+    '#options' => $link['localized_options'],
+    '#url' => $link['url'],
+  );
+}

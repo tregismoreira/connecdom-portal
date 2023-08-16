@@ -1,0 +1,44 @@
+uuid: b87d9a9a-f448-48bf-8d3e-723a6fe6179b
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.report.body
+    - field.field.node.report.field_report_study
+    - field.field.node.report.field_report_title
+    - node.type.report
+  module:
+    - entity_print
+    - text
+    - user
+third_party_settings:
+  entity_print:
+    pdf_label: 'View PDF'
+id: node.report.default
+targetEntityType: node
+bundle: report
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_report_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  content_moderation_control: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_report_study: true
+  langcode: true
+  links: true

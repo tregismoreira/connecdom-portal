@@ -1,0 +1,136 @@
+uuid: 110d3b10-df3d-462d-a544-2682b6074c96
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.doctor_register
+    - field.field.user.user.field_access_token
+    - field.field.user.user.field_address
+    - field.field.user.user.field_bank
+    - field.field.user.user.field_bank_account
+    - field.field.user.user.field_bank_branch
+    - field.field.user.user.field_billing_cnpj
+    - field.field.user.user.field_billing_cpf
+    - field.field.user.user.field_billing_type
+    - field.field.user.user.field_clinic_branch
+    - field.field.user.user.field_clinic_staff
+    - field.field.user.user.field_cnpj
+    - field.field.user.user.field_company
+    - field.field.user.user.field_contact_name
+    - field.field.user.user.field_cpf
+    - field.field.user.user.field_crm_number
+    - field.field.user.user.field_crm_state
+    - field.field.user.user.field_curriculum
+    - field.field.user.user.field_email
+    - field.field.user.user.field_fullname
+    - field.field.user.user.field_graduation
+    - field.field.user.user.field_graduation_complement
+    - field.field.user.user.field_graduation_others
+    - field.field.user.user.field_graduation_post
+    - field.field.user.user.field_locality
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_signature
+    - field.field.user.user.field_terms_autonomy
+    - field.field.user.user.field_terms_of_use
+    - field.field.user.user.user_picture
+  module:
+    - field_group
+    - user
+third_party_settings:
+  field_group:
+    group_account:
+      children:
+        - account
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Conta de usuário'
+    group_profile:
+      children:
+        - field_fullname
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Dados do perfil'
+    group_terms:
+      children:
+        - field_terms_of_use
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Termos
+_core:
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+id: user.user.doctor_register
+targetEntityType: user
+bundle: user
+mode: doctor_register
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_fullname:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_terms_of_use:
+    weight: 3
+    settings:
+      display_label: false
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+hidden:
+  contact: true
+  field_access_token: true
+  field_address: true
+  field_bank: true
+  field_bank_account: true
+  field_bank_branch: true
+  field_billing_cnpj: true
+  field_billing_cpf: true
+  field_billing_type: true
+  field_clinic_branch: true
+  field_clinic_staff: true
+  field_cnpj: true
+  field_company: true
+  field_contact_name: true
+  field_cpf: true
+  field_crm_number: true
+  field_crm_state: true
+  field_curriculum: true
+  field_email: true
+  field_graduation: true
+  field_graduation_complement: true
+  field_graduation_others: true
+  field_graduation_post: true
+  field_locality: true
+  field_phone: true
+  field_signature: true
+  field_terms_autonomy: true
+  langcode: true
+  language: true
+  path: true
+  timezone: true
+  user_picture: true

@@ -1,0 +1,14 @@
+uuid: c8abcf17-0de2-4586-94b9-858eacad5020
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - user.role.doctor
+  module:
+    - user
+id: user_add_role_action.doctor
+label: 'Add the Médico role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: doctor

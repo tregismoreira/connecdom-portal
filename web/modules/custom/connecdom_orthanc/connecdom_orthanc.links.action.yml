@@ -1,0 +1,25 @@
+entity.patient.add_form:
+  route_name: entity.patient.add_form
+  title: 'Add Patient'
+  appears_on:
+    - entity.patient.collection
+entity.study.add_form:
+  route_name: entity.study.add_form
+  title: 'Add Study'
+  appears_on:
+    - entity.study.collection
+entity.series.add_form:
+  route_name: entity.series.add_form
+  title: 'Add Series'
+  appears_on:
+    - entity.series.collection
+entity.instance.add_form:
+  route_name: entity.instance.add_form
+  title: 'Add Instance'
+  appears_on:
+    - entity.instance.collection
+entity.modality.add_form:
+  route_name: entity.modality.add_form
+  title: 'Add Modality'
+  appears_on:
+    - entity.modality.collection

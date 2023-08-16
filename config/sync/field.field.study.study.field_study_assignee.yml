@@ -1,0 +1,33 @@
+uuid: 75ee6836-531f-4aff-9177-b6fbf4a3116c
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.study.field_study_assignee
+  module:
+    - connecdom_orthanc
+id: study.study.field_study_assignee
+field_name: field_study_assignee
+entity_type: study
+bundle: study
+label: Doctor
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        doctor: doctor
+        administrator: '0'
+        clinic: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

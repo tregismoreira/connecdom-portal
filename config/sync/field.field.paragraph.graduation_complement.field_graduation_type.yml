@@ -1,0 +1,21 @@
+uuid: ffdb7d89-5ffc-4ee5-9202-84c0a5b89f54
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_graduation_type
+    - paragraphs.paragraphs_type.graduation_complement
+  module:
+    - options
+id: paragraph.graduation_complement.field_graduation_type
+field_name: field_graduation_type
+entity_type: paragraph
+bundle: graduation_complement
+label: Nível
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

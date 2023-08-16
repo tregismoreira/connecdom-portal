@@ -1,0 +1,19 @@
+uuid: 4da17ba8-c9ff-4426-9442-01ee0c2cbf19
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_graduation_subject
+    - paragraphs.paragraphs_type.graduation_post
+id: paragraph.graduation_post.field_graduation_subject
+field_name: field_graduation_subject
+entity_type: paragraph
+bundle: graduation_post
+label: Área
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

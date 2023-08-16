@@ -1,0 +1,24 @@
+uuid: 20e78853-8f68-4e1a-8a26-1db847b30fbe
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.patient.field_patient_studies
+  module:
+    - connecdom_orthanc
+_core:
+  default_config_hash: VG77h0D7EV_ItMXtAAAWVCx8Z88-Rb_bWDyBziCSzcc
+id: patient.patient.field_patient_studies
+field_name: field_patient_studies
+entity_type: patient
+bundle: patient
+label: Studies
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:study'
+  handler_settings: {  }
+field_type: entity_reference

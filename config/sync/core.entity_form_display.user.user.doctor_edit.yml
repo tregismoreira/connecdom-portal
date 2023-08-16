@@ -1,0 +1,319 @@
+uuid: c57fcd3a-235d-4691-b989-fd0df9a77314
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.doctor_edit
+    - field.field.user.user.field_access_token
+    - field.field.user.user.field_address
+    - field.field.user.user.field_bank
+    - field.field.user.user.field_bank_account
+    - field.field.user.user.field_bank_branch
+    - field.field.user.user.field_billing_cnpj
+    - field.field.user.user.field_billing_cpf
+    - field.field.user.user.field_billing_type
+    - field.field.user.user.field_clinic_branch
+    - field.field.user.user.field_clinic_staff
+    - field.field.user.user.field_cnpj
+    - field.field.user.user.field_company
+    - field.field.user.user.field_contact_name
+    - field.field.user.user.field_cpf
+    - field.field.user.user.field_crm_number
+    - field.field.user.user.field_crm_state
+    - field.field.user.user.field_curriculum
+    - field.field.user.user.field_email
+    - field.field.user.user.field_fullname
+    - field.field.user.user.field_graduation
+    - field.field.user.user.field_graduation_complement
+    - field.field.user.user.field_graduation_others
+    - field.field.user.user.field_graduation_post
+    - field.field.user.user.field_locality
+    - field.field.user.user.field_phone
+    - field.field.user.user.field_signature
+    - field.field.user.user.field_terms_autonomy
+    - field.field.user.user.field_terms_of_use
+    - field.field.user.user.user_picture
+    - image.style.thumbnail
+  module:
+    - address
+    - brazilian_ids
+    - field_group
+    - file
+    - image
+    - paragraphs
+    - user
+third_party_settings:
+  field_group:
+    group_account:
+      children:
+        - account
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Conta de usuário'
+    group_profile:
+      children:
+        - user_picture
+        - field_fullname
+        - field_locality
+      parent_name: ''
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: 'Dados do perfil'
+    group_crm:
+      children:
+        - field_crm_state
+        - field_crm_number
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: CRM
+    group_billing:
+      children:
+        - field_billing_type
+        - field_billing_cnpj
+        - field_billing_cpf
+        - field_bank
+        - field_bank_branch
+        - field_bank_account
+      parent_name: ''
+      weight: 5
+      format_type: fieldset
+      format_settings:
+        label: 'Informações de faturamento'
+        description: 'Essas informações não serão divulgadas.'
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Informações de faturamento'
+    group_curriculum:
+      children:
+        - field_graduation
+        - field_graduation_post
+        - field_graduation_complement
+        - field_graduation_others
+        - field_curriculum
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Currículo
+    group_contact:
+      children:
+        - field_phone
+        - field_email
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        label: 'Dados para contato'
+        description: 'Essas informações não serão divulgadas.'
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Dados para contato'
+_core:
+  default_config_hash: K-1rBM8mTIkFp9RqOC2tMRUukOQ1xbRCfSKK8dEddnA
+id: user.user.doctor_edit
+targetEntityType: user
+bundle: user
+mode: doctor_edit
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_bank:
+    type: string_textfield
+    weight: 14
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_bank_account:
+    type: string_textfield
+    weight: 16
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_bank_branch:
+    type: string_textfield
+    weight: 15
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_billing_cnpj:
+    type: brazilian_ids_cnpj
+    weight: 12
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_billing_cpf:
+    type: brazilian_ids_cpf
+    weight: 13
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_billing_type:
+    type: options_select
+    weight: 11
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_crm_number:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_crm_state:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_curriculum:
+    type: file_generic
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_email:
+    type: email_default
+    weight: 16
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_fullname:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_graduation:
+    type: entity_reference_paragraphs
+    weight: 0
+    region: content
+    settings:
+      title: Formação
+      title_plural: Formações
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: graduation
+    third_party_settings: {  }
+  field_graduation_complement:
+    type: entity_reference_paragraphs
+    weight: 2
+    region: content
+    settings:
+      title: Formação
+      title_plural: Formações
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: graduation_complement
+    third_party_settings: {  }
+  field_graduation_others:
+    type: string_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_graduation_post:
+    type: entity_reference_paragraphs
+    weight: 1
+    region: content
+    settings:
+      title: 'Pós-graduação / Residência'
+      title_plural: 'Pós-graduação / Residência'
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: graduation_post
+    third_party_settings: {  }
+  field_locality:
+    type: address_default
+    weight: 2
+    region: content
+    settings:
+      default_country: null
+    third_party_settings: {  }
+  field_phone:
+    type: string_textfield
+    weight: 15
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_signature:
+    type: image_image
+    weight: 6
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  user_picture:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  contact: true
+  field_access_token: true
+  field_address: true
+  field_clinic_branch: true
+  field_clinic_staff: true
+  field_cnpj: true
+  field_company: true
+  field_contact_name: true
+  field_cpf: true
+  field_terms_autonomy: true
+  field_terms_of_use: true
+  langcode: true
+  language: true
+  path: true
+  timezone: true

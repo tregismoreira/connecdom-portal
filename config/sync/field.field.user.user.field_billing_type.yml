@@ -1,0 +1,29 @@
+uuid: 90ad931b-bdd2-45c9-957a-18e2b5ee3ea9
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_billing_type
+  module:
+    - multiple_registration
+    - options
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      authenticated: 0
+      clinic: 0
+      doctor: 0
+    user_additional_register_form_required: null
+id: user.user.field_billing_type
+field_name: field_billing_type
+entity_type: user
+bundle: user
+label: 'Tipo de faturamento'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

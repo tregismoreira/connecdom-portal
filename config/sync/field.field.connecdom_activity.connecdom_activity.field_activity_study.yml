@@ -1,0 +1,26 @@
+uuid: dfd0ad54-c890-4ce9-a830-d592a2393dd8
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.connecdom_activity.field_activity_study
+  module:
+    - connecdom_activity
+id: connecdom_activity.connecdom_activity.field_activity_study
+field_name: field_activity_study
+entity_type: connecdom_activity
+bundle: connecdom_activity
+label: Study
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:study'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

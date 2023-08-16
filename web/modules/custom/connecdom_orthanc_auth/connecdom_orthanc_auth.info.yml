@@ -1,0 +1,6 @@
+name: "ConnecdomOrthanc Authentication"
+type: module
+description: "Integration with Orthanc Advanced Authorization plugin."
+core: 8.x
+core_version_requirement: ^8 || ^9
+package: "Connecdom"

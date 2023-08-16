@@ -1,0 +1,26 @@
+uuid: 4f63546d-3698-4c24-9774-7e8d29a9335f
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_orthanc
+    - datetime
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: '-_w463LynfnFwvzytGfoXNYsiw0tRsGvR6RirNfvc1I'
+id: patient.field_patient_birthdate
+field_name: field_patient_birthdate
+entity_type: patient
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

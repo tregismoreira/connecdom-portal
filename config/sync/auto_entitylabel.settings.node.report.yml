@@ -1,0 +1,6 @@
+status: 1
+pattern: 'Report from [node:field_report_study:entity:field_study_assignee] on Study [node:field_report_study:entity:resource_id]'
+escape: false
+dependencies:
+  config:
+    - node.type.report

@@ -1,0 +1,38 @@
+uuid: bc512a9a-e520-4b85-a7e6-5f74f4da9041
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.report.body
+    - field.field.node.report.field_report_study
+    - field.field.node.report.field_report_title
+    - node.type.report
+  module:
+    - text
+    - user
+id: node.report.teaser
+targetEntityType: node
+bundle: report
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_report_study: true
+  field_report_title: true
+  langcode: true

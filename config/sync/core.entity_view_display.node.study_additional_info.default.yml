@@ -1,0 +1,44 @@
+uuid: 98d76a56-4b88-48dd-8b7e-b96fa178edfb
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.study_additional_info.body
+    - field.field.node.study_additional_info.field_additional_info_study
+    - field.field.node.study_additional_info.field_attachments
+    - node.type.study_additional_info
+  module:
+    - file
+    - text
+    - user
+id: node.study_additional_info.default
+targetEntityType: node
+bundle: study_additional_info
+mode: default
+content:
+  body:
+    label: above
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_attachments:
+    weight: 2
+    label: hidden
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_table
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_additional_info_study: true
+  langcode: true

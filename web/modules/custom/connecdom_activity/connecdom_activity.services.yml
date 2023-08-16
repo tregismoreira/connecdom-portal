@@ -1,0 +1,4 @@
+services:
+  connecdom_activity.handler:
+    class: Drupal\connecdom_activity\ConnecdomActivityService
+    arguments: ['@entity_type.manager']

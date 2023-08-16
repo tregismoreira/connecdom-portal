@@ -1,0 +1,14 @@
+
+# Connecdom Activity menu items definition
+entity.connecdom_activity.collection:
+  title: 'Connecdom Activity list'
+  route_name: entity.connecdom_activity.collection
+  description: 'List Connecdom Activity entities'
+  parent: system.admin_structure
+  weight: 100
+
+connecdom_activity.admin.structure.settings:
+  title: 'Connecdom Activity settings'
+  description: 'Configure Connecdom Activity entities'
+  route_name: connecdom_activity.settings
+  parent: system.admin_structure

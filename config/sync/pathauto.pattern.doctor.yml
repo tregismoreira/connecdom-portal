@@ -1,0 +1,22 @@
+uuid: 42156f2e-2312-42f6-92d8-a96822d18b94
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+id: doctor
+label: Doctor
+type: 'canonical_entities:node'
+pattern: '/doctor/[node:title]'
+selection_criteria:
+  6697b308-e3df-42ca-bbfb-cb4df52da24e:
+    id: node_type
+    bundles:
+      doctor: doctor
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 6697b308-e3df-42ca-bbfb-cb4df52da24e
+selection_logic: and
+weight: -5
+relationships: {  }

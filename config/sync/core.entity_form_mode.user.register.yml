@@ -1,0 +1,12 @@
+uuid: 061475ba-e353-4de1-8df0-b0f3475fd9a1
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - user
+_core:
+  default_config_hash: flXhTcp55yLcyy7ZLOhPGKGZobZQJdkAFVWV3LseiuI
+id: user.register
+label: 'Registro genérico'
+targetEntityType: user
+cache: true

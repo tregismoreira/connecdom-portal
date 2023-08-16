@@ -1,0 +1,100 @@
+administer connecdom_orthanc settings:
+  title: 'Administer ConnecdomOrthanc Settings'
+  description: 'Allow to access the administration form to configure ConnecdomOrthanc settings.'
+  restrict access: true
+
+add patient entities:
+  title: 'Create new Patient entities'
+
+administer patient entities:
+  title: 'Administer Patient entities'
+  description: 'Allow to access the administration form to configure Patient entities.'
+  restrict access: true
+
+delete patient entities:
+  title: 'Delete Patient entities'
+
+edit patient entities:
+  title: 'Edit Patient entities'
+
+view published patient entities:
+  title: 'View published Patient entities'
+
+view unpublished patient entities:
+  title: 'View unpublished Patient entities'
+add study entities:
+  title: 'Create new Study entities'
+
+administer study entities:
+  title: 'Administer Study entities'
+  description: 'Allow to access the administration form to configure Study entities.'
+  restrict access: true
+
+delete study entities:
+  title: 'Delete Study entities'
+
+edit study entities:
+  title: 'Edit Study entities'
+
+view published study entities:
+  title: 'View published Study entities'
+
+view unpublished study entities:
+  title: 'View unpublished Study entities'
+add series entities:
+  title: 'Create new Series entities'
+
+administer series entities:
+  title: 'Administer Series entities'
+  description: 'Allow to access the administration form to configure Series entities.'
+  restrict access: true
+
+delete series entities:
+  title: 'Delete Series entities'
+
+edit series entities:
+  title: 'Edit Series entities'
+
+view published series entities:
+  title: 'View published Series entities'
+
+view unpublished series entities:
+  title: 'View unpublished Series entities'
+add instance entities:
+  title: 'Create new Instance entities'
+
+administer instance entities:
+  title: 'Administer Instance entities'
+  description: 'Allow to access the administration form to configure Instance entities.'
+  restrict access: true
+
+delete instance entities:
+  title: 'Delete Instance entities'
+
+edit instance entities:
+  title: 'Edit Instance entities'
+
+view published instance entities:
+  title: 'View published Instance entities'
+
+view unpublished instance entities:
+  title: 'View unpublished Instance entities'
+add modality entities:
+  title: 'Create new Modality entities'
+
+administer modality entities:
+  title: 'Administer Modality entities'
+  description: 'Allow to access the administration form to configure Modality entities.'
+  restrict access: true
+
+delete modality entities:
+  title: 'Delete Modality entities'
+
+edit modality entities:
+  title: 'Edit Modality entities'
+
+view published modality entities:
+  title: 'View published Modality entities'
+
+view unpublished modality entities:
+  title: 'View unpublished Modality entities'

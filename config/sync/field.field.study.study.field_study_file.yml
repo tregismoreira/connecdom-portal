@@ -1,0 +1,47 @@
+uuid: 30c4287d-b640-4a99-b8a6-e9fdedea8411
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.study.field_study_file
+  module:
+    - connecdom_orthanc
+    - file
+    - filefield_paths
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: resources/studies
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
+    file_name:
+      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+id: study.study.field_study_file
+field_name: field_study_file
+entity_type: study
+bundle: study
+label: File
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: zip
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+  description_field_required: false
+field_type: file

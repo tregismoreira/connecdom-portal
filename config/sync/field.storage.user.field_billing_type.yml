@@ -1,0 +1,31 @@
+uuid: 4d2bc60b-4a26-4b5e-967b-08293e279516
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - field_permissions
+    - options
+    - user
+third_party_settings:
+  field_permissions:
+    permission_type: private
+id: user.field_billing_type
+field_name: field_billing_type
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: PF
+      label: 'Pessoa física'
+    -
+      value: PJ
+      label: 'Pessoa jurídica'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+uuid: 34fed6f2-405b-4f13-b5da-f4e74eb46f62
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.study.field_study_additional_info
+    - node.type.study_additional_info
+  module:
+    - connecdom_orthanc
+id: study.study.field_study_additional_info
+field_name: field_study_additional_info
+entity_type: study
+bundle: study
+label: 'Additional Info'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      study_additional_info: study_additional_info
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

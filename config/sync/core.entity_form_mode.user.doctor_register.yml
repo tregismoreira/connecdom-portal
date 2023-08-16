@@ -1,0 +1,10 @@
+uuid: 30faae23-219e-44b5-8b6f-7c092b771562
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - user
+id: user.doctor_register
+label: 'Médico: Registro'
+targetEntityType: user
+cache: true

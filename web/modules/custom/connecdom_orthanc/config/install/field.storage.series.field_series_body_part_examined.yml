@@ -1,0 +1,25 @@
+uuid: b4948ee7-3e4d-4b65-b168-5d490bb25294
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_orthanc
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: series.field_series_body_part_examined
+field_name: field_series_body_part_examined
+entity_type: series
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

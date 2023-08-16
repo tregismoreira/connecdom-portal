@@ -1,0 +1,23 @@
+uuid: e295ad57-0272-49e6-954c-25e0b3dd05b1
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.patient.field_patient_birthdate
+  module:
+    - connecdom_orthanc
+    - datetime
+_core:
+  default_config_hash: uySOyLGzg0QTVB6761ugCiLszXlqv8_5v0va_Xx4F8M
+id: patient.patient.field_patient_birthdate
+field_name: field_patient_birthdate
+entity_type: patient
+bundle: patient
+label: 'Patient Birthdate'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,26 @@
+uuid: 3d7ae8e1-41a2-481b-b42b-4908e4be7f51
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.series.field_series_parent_study
+  module:
+    - connecdom_orthanc
+id: series.series.field_series_parent_study
+field_name: field_series_parent_study
+entity_type: series
+bundle: series
+label: 'Parent Study'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:study'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

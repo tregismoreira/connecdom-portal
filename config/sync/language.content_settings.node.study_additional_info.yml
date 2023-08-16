@@ -1,0 +1,11 @@
+uuid: f37ca3d4-c96a-4e37-b417-0649287dca48
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.study_additional_info
+id: node.study_additional_info
+target_entity_type_id: node
+target_bundle: study_additional_info
+default_langcode: site_default
+language_alterable: false

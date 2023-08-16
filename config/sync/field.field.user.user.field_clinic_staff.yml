@@ -1,0 +1,44 @@
+uuid: 685cc1a8-669d-4e33-80bb-ad3d7f68a8f9
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_clinic_staff
+  module:
+    - multiple_registration
+    - user
+third_party_settings:
+  multiple_registration:
+    user_additional_register_form:
+      authenticated: 0
+      clinic: 0
+      doctor: 0
+    user_additional_register_form_required:
+      authenticated: 0
+      clinic: 0
+      doctor: 0
+id: user.user.field_clinic_staff
+field_name: field_clinic_staff
+entity_type: user
+bundle: user
+label: Equipe
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        doctor: doctor
+        administrator: '0'
+        clinic: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

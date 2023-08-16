@@ -1,0 +1,26 @@
+uuid: 2d2121ec-f54e-40e2-a635-d6dc87b283e8
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_orthanc
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: h1YA4NlmJmteHu7ecLr541FvdEuNyKSYa0tEFbMfZwA
+id: patient.field_patient_id
+field_name: field_patient_id
+entity_type: patient
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

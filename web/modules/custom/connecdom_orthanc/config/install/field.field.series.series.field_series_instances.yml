@@ -1,0 +1,26 @@
+uuid: 6f18036e-65ae-494b-9339-ab72786aa78f
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.series.field_series_instances
+  module:
+    - connecdom_orthanc
+id: series.series.field_series_instances
+field_name: field_series_instances
+entity_type: series
+bundle: series
+label: Instances
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:instance'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

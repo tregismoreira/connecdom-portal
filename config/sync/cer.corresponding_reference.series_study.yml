@@ -1,0 +1,14 @@
+uuid: da14b4ab-4353-467e-8787-7e1a08475f7f
+langcode: pt-br
+status: true
+dependencies: {  }
+id: series_study
+label: 'Series <> Study'
+enabled: true
+first_field: field_series_parent_study
+second_field: field_study_series
+bundles:
+  series:
+    - series
+  study:
+    - study

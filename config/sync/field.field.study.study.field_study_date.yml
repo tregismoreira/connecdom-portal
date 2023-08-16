@@ -1,0 +1,23 @@
+uuid: edc6213e-28d3-44a5-a5db-be9149d8bae7
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.study.field_study_date
+  module:
+    - connecdom_orthanc
+    - datetime
+_core:
+  default_config_hash: YYQKAiZB6b4_0hyj1_9nkB3tv_8meJ_GbVnAOXfeHGY
+id: study.study.field_study_date
+field_name: field_study_date
+entity_type: study
+bundle: study
+label: 'Study Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

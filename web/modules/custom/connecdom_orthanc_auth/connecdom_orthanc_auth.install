@@ -1,0 +1,61 @@
+<?php
+
+/**
+ * Implements hook_schema().
+ */
+function connecdom_orthanc_auth_schema() {
+  $schema['connecdom_orthanc_auth'] = [
+    'description' => 'Access token management for Orthanc Authorization Plugin.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+      ],
+      'token' => [
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+      ],
+      'sid' => [
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => FALSE,
+      ],
+      'resource' => [
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => FALSE,
+      ],
+      'master' => [
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+      ],
+      'expire' => [
+        'type' => 'int',
+        'not null' => TRUE,
+      ]
+    ],
+    'primary key' => [
+      'id',
+    ],
+  ];
+
+  return $schema;
+}
+
+/**
+ * ALTER TABLE: Rename column `master` to `type`.
+ */
+function connecdom_orthanc_auth_update_8201() {
+  $database = \Drupal::database();
+  $database->query("ALTER TABLE {connecdom_orthanc_auth} CHANGE master type int(11)");
+}
+
+/**
+ * ALTER TABLE: Allow null values for expire column.
+ */
+function connecdom_orthanc_auth_update_8202() {
+  $database = \Drupal::database();
+  $database->query("ALTER TABLE {connecdom_orthanc_auth} CHANGE expire expire INT DEFAULT NULL");
+}

@@ -1,0 +1,19 @@
+uuid: 1113e7ea-95c9-4f4a-801a-9c2a1787a2bf
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_orthanc
+id: patient.field_patient_studies
+field_name: field_patient_studies
+entity_type: patient
+type: entity_reference
+settings:
+  target_type: study
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,67 @@
+.node {
+  &--type-doctor,
+  &--type-clinic {
+    padding: 10px 0;
+
+    .bs-region--left {
+      padding-right: 0;
+
+      .field--name-field-image img {
+        border-radius: 4px;
+        border: 3px solid #fff;
+        -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+      }
+    }
+    .bs-region--right {
+      .field--name-node-status {
+        margin-bottom: 10px;
+
+        .label {
+          text-transform: uppercase;
+        }
+      }
+      .field--name-field-headline {
+        font-size: 16px;
+        margin-bottom: 4px;
+      }
+      .field--name-node-clinic-title {
+        h2 {
+          margin: 0 0 20px 0;
+        }
+      }
+    }
+  }
+
+  .field--name-field-graduation,
+  .field--name-field-graduation-post,
+  .field--name-field-graduation-complement {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+
+    &:last-child {
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
+
+    & > .field--label {
+      font-weight: 300;
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+article {
+  &.report {
+    .field--name-field-report-title {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+  }
+}

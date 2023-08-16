@@ -1,0 +1,24 @@
+uuid: 4ae4ac1d-15d4-416c-8816-5a93f8a17775
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_orthanc
+    - field_permissions
+    - user
+third_party_settings:
+  field_permissions:
+    permission_type: custom
+id: study.field_study_assignee
+field_name: field_study_assignee
+entity_type: study
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

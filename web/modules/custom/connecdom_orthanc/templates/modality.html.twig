@@ -1,0 +1,22 @@
+{#
+/**
+ * @file modality.html.twig
+ * Default theme implementation to present Modality data.
+ *
+ * This template is used when viewing Modality pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_modality()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('modality') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

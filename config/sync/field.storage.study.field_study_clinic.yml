@@ -1,0 +1,24 @@
+uuid: c6c0d82f-7da8-44d8-b60e-c2343ad7f3df
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_orthanc
+    - field_permissions
+    - user
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: study.field_study_clinic
+field_name: field_study_clinic
+entity_type: study
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

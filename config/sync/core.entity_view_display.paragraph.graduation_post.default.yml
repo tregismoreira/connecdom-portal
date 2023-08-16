@@ -1,0 +1,40 @@
+uuid: 3398385f-ac0c-4bac-a1db-1077ffc9a080
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.graduation_post.field_graduation_institution
+    - field.field.paragraph.graduation_post.field_graduation_subject
+    - field.field.paragraph.graduation_post.field_graduation_year
+    - paragraphs.paragraphs_type.graduation_post
+id: paragraph.graduation_post.default
+targetEntityType: paragraph
+bundle: graduation_post
+mode: default
+content:
+  field_graduation_institution:
+    weight: 1
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_graduation_subject:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_graduation_year:
+    weight: 2
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden: {  }

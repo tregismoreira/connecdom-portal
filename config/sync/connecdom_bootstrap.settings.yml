@@ -1,0 +1,36 @@
+cdn_provider: ''
+_core:
+  default_config_hash: _5qrDuRmWmRVjW00si3U1s1NrgrocA4N653EYGRfgEE
+schemas:
+  bootstrap: 8000
+  connecdom_bootstrap: 8000
+navbar_inverse: 1
+table_responsive: '-1'
+table: ''
+navbar_position: static-top
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://dev.connecdom.com.br/themes/contrib/bootstrap/favicon.ico'
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: true
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''
+tooltip_enabled: 0
+langcode: pt-br

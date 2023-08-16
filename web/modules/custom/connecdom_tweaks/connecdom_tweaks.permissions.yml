@@ -1,0 +1,15 @@
+'access worklist':
+  title: 'Access Worklist'
+  description: 'Allow users to access the Worklist.'
+'manage study assignment':
+  title: 'Manage study assignment'
+  description: 'Allow users to assign/unassign studies to doctors.'
+'manage staff':
+  title: 'Manage staff'
+  description: 'Allow users to manage staff.'
+'view study on dicom web viewer':
+  title: 'View Study on DICOM Web Viewer'
+  description: 'Allow users to view the Study images on DICOM Web Viewer.'
+'manage access tokens':
+  title: 'Manage access tokens'
+  description: 'Allow users to manage the access tokens'

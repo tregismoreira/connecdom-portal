@@ -1,0 +1,20 @@
+uuid: 0add44a3-126a-426f-bede-35f0c1263866
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.instance.field_instance_image_comments
+  module:
+    - connecdom_orthanc
+id: instance.instance.field_instance_image_comments
+field_name: field_instance_image_comments
+entity_type: instance
+bundle: instance
+label: 'Image Comments'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

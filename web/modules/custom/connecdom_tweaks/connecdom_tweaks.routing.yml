@@ -1,0 +1,57 @@
+connecdom_tweaks.dicom_web_viewer:
+  path: "/study/{id}/view"
+  defaults:
+    _controller: '\Drupal\connecdom_tweaks\Controller\ConnecdomTweaksController::dicomWebViewer'
+    _title: "DICOM Web Viewer"
+  requirements:
+    _permission: "access content"
+connecdom_tweaks.clinic_regenerate_token:
+  path: "/user/{user}/regenerate_token"
+  defaults:
+    _form: '\Drupal\connecdom_tweaks\Form\ConfirmClinicRegenerateToken'
+    _title: "Regenerate access token"
+  options:
+    parameters:
+      user:
+        type: entity:user
+  requirements:
+    _custom_access: '\Drupal\connecdom_tweaks\Controller\ConnecdomTweaksController::clinicRegenerateTokenAccess'
+connecdom_tweaks.study_assign_doctor:
+  path: "/study/{id}/assign"
+  defaults:
+    _form: '\Drupal\connecdom_tweaks\Form\ConfirmAssignDoctorForm'
+    _title: "Assign a doctor to a study"
+  requirements:
+    _custom_access: '\Drupal\connecdom_tweaks\Controller\ConnecdomTweaksController::studyAssignmentAccess'
+connecdom_tweaks.study_unassign_doctor:
+  path: "/study/{id}/unassign"
+  defaults:
+    _form: '\Drupal\connecdom_tweaks\Form\ConfirmUnassignDoctorForm'
+    _title: "Remove a doctor from a study"
+  requirements:
+    _custom_access: '\Drupal\connecdom_tweaks\Controller\ConnecdomTweaksController::studyAssignmentAccess'
+connecdom_tweaks.clinic_staff_remove:
+  path: "/user/{clinic}/staff/{doctor}/remove"
+  defaults:
+    _form: '\Drupal\connecdom_tweaks\Form\ConfirmStaffRemoveForm'
+    _title: "Remove staff"
+  requirements:
+    _permission: "access content"
+connecdom_tweaks.clinic_staff_add:
+  path: "/user/{clinic}/staff/{doctor}/add"
+  defaults:
+    _controller: '\Drupal\connecdom_tweaks\Controller\ConnecdomTweaksController::clinicStaffAddCallback'
+    _title: "Add staff"
+  requirements:
+    _permission: "access content"
+connecdom_tweaks.report_publish:
+  path: "/node/{node}/publish"
+  defaults:
+    _form: '\Drupal\connecdom_tweaks\Form\ConfirmReportPublishForm'
+    _title: "Publish Report"
+  options:
+    parameters:
+      node:
+        type: entity:node
+  requirements:
+    _permission: "access content"

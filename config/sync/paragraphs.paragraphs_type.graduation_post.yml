@@ -1,0 +1,9 @@
+uuid: 56462de8-5d4b-4db1-b413-0f3127a37628
+langcode: pt-br
+status: true
+dependencies: {  }
+id: graduation_post
+label: 'Pós-graduação / Residência'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

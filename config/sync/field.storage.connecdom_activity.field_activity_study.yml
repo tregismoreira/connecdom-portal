@@ -1,0 +1,24 @@
+uuid: 5b89de35-6153-4b36-9ec4-6d594cbb29cf
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_activity
+    - connecdom_orthanc
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+id: connecdom_activity.field_activity_study
+field_name: field_activity_study
+entity_type: connecdom_activity
+type: entity_reference
+settings:
+  target_type: study
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

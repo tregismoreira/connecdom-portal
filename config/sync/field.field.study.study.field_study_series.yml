@@ -1,0 +1,28 @@
+uuid: 0cd963b0-cd5b-4fa2-b358-df350c92bfd5
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.study.field_study_series
+  module:
+    - connecdom_orthanc
+_core:
+  default_config_hash: lfHRsfsla75GpW_wZVE4AFqIC1Z2yfxX1rFKjzgudEA
+id: study.study.field_study_series
+field_name: field_study_series
+entity_type: study
+bundle: study
+label: Series
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:series'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

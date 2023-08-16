@@ -1,0 +1,33 @@
+.view-worklist {
+  table {
+    td {
+      vertical-align: middle !important;
+      white-space: inherit !important;
+      word-wrap: break-word !important;
+
+      &.views-field-field-study-description {
+        width: 100px;
+      }
+      &.views-field-dropbutton {
+        width: 175px;
+
+        .icon {
+          display: none;
+        }
+      }
+    }
+
+    &.bt {
+      tr {
+        td {
+          &.views-field-field-study-description {
+            width: inherit;
+          }
+          &.views-field-dropbutton {
+            width: inherit;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+theme: connecdom_bootstrap
+defaults:
+  sender: SMTPMailSystem
+  formatter: mime_mail
+_core:
+  default_config_hash: IhwTepsVwtbtbcT5GzQKhCXDCRvbk3MNkWqPiuiZ10s
+modules:
+  sendgrid_integration: {  }
+langcode: pt-br

@@ -1,0 +1,26 @@
+uuid: fb90a0da-6728-4409-abb1-37134d391d78
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.instance.field_instance_parent_series
+  module:
+    - connecdom_orthanc
+id: instance.instance.field_instance_parent_series
+field_name: field_instance_parent_series
+entity_type: instance
+bundle: instance
+label: 'Parent Series'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:series'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

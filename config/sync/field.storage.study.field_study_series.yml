@@ -1,0 +1,25 @@
+uuid: 430cf0f9-a030-47a6-9d5b-c17f322dcf22
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - connecdom_orthanc
+    - field_permissions
+third_party_settings:
+  field_permissions:
+    permission_type: public
+_core:
+  default_config_hash: QspdI-uaEeGN8LGF0Gwwi3CBFtwNvcdD04oMbJyUh_M
+id: study.field_study_series
+field_name: field_study_series
+entity_type: study
+type: entity_reference
+settings:
+  target_type: series
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
